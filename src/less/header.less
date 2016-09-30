@@ -68,7 +68,7 @@ header {
 
   .form-group {
     border-radius: 3px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid @grey-color;
 
     .form-control {
       border: none;
@@ -93,6 +93,30 @@ header {
          margin: 0;
        }
      }
+  }
+
+  .header_user {
+    color: @main-color;
+    text-align: right;
+
+    a {
+      padding: 0 8px;
+      color: @main-color;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .header_search_enter {
+      border-right: 1px solid @grey-color;
+      margin-right: -4px;
+    }
+
+    .header_search_enter::before {
+      content: url("../../img/icon-user.png");
+    }
+
+
   }
 
 
