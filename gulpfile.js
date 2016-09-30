@@ -21,5 +21,5 @@ gulp.task('watch', function () {
     // gulp.watch('assets/js/libs/**/*.js', ['squish-jquery']);
     // gulp.watch('assets/js/*.js', ['build-js']);
     gulp.watch('./src/less/**/*.less', ['less']);
-    gulp.watch('./src/ejs/**/*.ejs', ['ejs']);
+    gulp.watch('./src/**/*.ejs', ['ejs']);
 });
