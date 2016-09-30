@@ -1,0 +1,36 @@
+header {
+  img {
+    margin-right: 14px;
+  }
+
+  .list-unstyled {
+    text-transform: uppercase;
+    color: @third-color;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+
+    li {
+      font-size: 20px;
+      color: @main-color;
+      font-weight: 500;
+
+      span {
+        font-size: 14px;
+        color: @second-color;
+      }
+
+      .btn.btn-link {
+        padding: 0;
+        color: @main-color;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+
+      .btn.btn-link::before {
+        content: url("../../img/icon.png");
+      }
+    }
+  }
+}
