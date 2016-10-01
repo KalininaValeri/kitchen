@@ -1,6 +1,28 @@
 header {
-  img {
-    margin-right: 14px;
+  //display: table;
+
+  .row {
+    //display: table-row;
+  }
+
+  .header_logo,
+  .header_search,
+  .header_user {
+    //display: table-cell;
+  }
+
+  .header_logo {
+    img {
+      margin-right: 14px;
+    }
+  }
+
+  .header_modal {
+    color: @main-color;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 12px;
   }
 
   .list-unstyled {
@@ -8,16 +30,19 @@ header {
     color: @third-color;
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+
 
     li {
       font-size: 20px;
       color: @main-color;
       font-weight: 500;
+      line-height: 24px;
 
       span {
         font-size: 14px;
         color: @second-color;
+        position: relative;
+        top: -4px;
       }
 
       .btn.btn-link {
@@ -28,7 +53,7 @@ header {
         font-size: 12px;
       }
 
-      .btn.btn-link::before {
+      .header_modal::before {
         content: url("../../img/icon.png");
       }
     }
@@ -44,6 +69,7 @@ header {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+    margin: 0;
 
     span {
       color: @second-color;
@@ -99,21 +125,35 @@ header {
     color: @main-color;
     text-align: right;
 
-    a {
+    .header_modal,
+    .header_user_product,
+    .header_user_price{
       padding: 0 8px;
-      color: @main-color;
-      text-transform: uppercase;
-      font-weight: 400;
-      line-height: 24px;
     }
 
-    .header_search_enter {
+    .header_search_enter,
+    .header_user_product{
       border-right: 1px solid @grey-color;
       margin-right: -4px;
     }
 
     .header_search_enter::before {
       content: url("../../img/icon-user.png");
+    }
+
+    .header_search_basket {
+      display: inline-block;
+      background: @second-color;
+      height: 35px;
+      width: 35px;
+      border-radius: 3px;
+      padding: 0;
+
+      img {
+        position: relative;
+        top: 17%;
+        right: 24%;
+      }
     }
 
 

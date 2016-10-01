@@ -1,8 +1,9 @@
 <% var title = 'Главная'; %>
-<% include part/begin-html %>
+<% include part/begin-html.ejs %>
 
+<div class="container">
+    <% include part/header.ejs %>
+</div>
 
-<% include part/header %>
-
-
-<% include part/end-html %>
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
