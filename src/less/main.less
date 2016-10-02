@@ -1,50 +1,120 @@
 .main_header_action {
   position: relative;
 
+  h2, h3 {
+    text-transform: uppercase;
+    position: absolute;
+    left: 40px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  h2 span, h3 span {
+    position: absolute;
+    font-size: 12px;
+  }
+
   h2 {
     background-color: rgba(254, 151, 0, 0.8);
     color: #ffffff;
-    text-transform: uppercase;
-    position: absolute;
     top: 50px;
-    left: 40px;
     font-size: 48px;
-    font-weight: 500;
-    line-height: 24px;
     padding: 15px 20px 23px 20px;
 
     span {
-      position: absolute;
       top: 41px;
       left: 117px;
-      font-size: 12px;
+
     }
-
-
   }
 
   h3 {
     background: rgba(46, 34, 31, 0.6);
     color: @second-color;
-    text-transform: uppercase;
-    position: absolute;
     top: 125px;
-    left: 40px;
     font-size: 40px;
-    font-weight: 500;
-    line-height: 24px;
     padding: 15px 10px 25px 10px;
   }
 
   span {
     color: #ffffff;
-    position: absolute;
     top: 42px;
-    left: 400px;
-    font-size: 12px;
+    right: 10px;
   }
 
 }
+.dimmer {
+  background: black;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.main_header {
+  div {
+    margin-bottom: 20px;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-size: cover;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      z-index: 5;
+    }
+
+    p {
+      font-size: 13px;/* Приближение из-за подстановки шрифтов */
+      font-weight: 500;
+      margin: 0;
+    }
+
+    a {
+      background: @second-color;
+      color: #ffffff;
+      font-size: 12px; /* Приближение из-за подстановки шрифтов */
+      font-weight: 400;
+      line-height: 12px; /* Приближение из-за подстановки шрифтов */
+      padding: 8px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: @hover-color;
+    }
+
+    a:focus {
+      background: @third-color;
+    }
+  }
+}
+
+.main_header_intres {
+  background: url("../../img/intr1.png") no-repeat;
+  padding-top: 115px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+
+  h4 {
+    margin: 0;
+  }
+  
+}
+
+.main_header_designer {
+  background: url("../../img/intr2.png") no-repeat;
+padding-top: 133px;
+}
+
+
+
 
 .carousel-indicators {
   left: 75px;
@@ -65,3 +135,4 @@
   border-radius: 0;
   background: @second-color;
 }
+
