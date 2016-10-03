@@ -7,6 +7,32 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
+* {
+  outline: none;
+}
+
+.basket {
+  background: @second-color;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 0;
+  width: 35px;
+  text-align: center;
+}
+
+a.basket {
+  display: inline-block;
+  padding: 6px 0;
+}
+
+.basket:hover {
+  background: @hover-color;
+}
+
+.basket:focus {
+  background: @third-color;
+}
+
 .advantages {
   padding: 0 15px;
   background-color: #f2f2f2;
@@ -30,5 +56,107 @@ a {
     span {
       margin-left: 5px;
     }
+  }
+}
+
+.assortment {
+
+  .product {
+
+    position: relative;
+    width: 360px;
+    padding: 15px 15px 50px;
+    border: 1px solid #e5e5e5;
+    color: #333333;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-transform: uppercase;
+
+    div {
+      margin: 10px 0;
+    }
+  }
+
+  .product_price span {
+    color: @hover-color;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+  }
+
+  .product-discount,
+  .product-new {
+    position: absolute;
+    left: 10px;
+    display: none;
+    width: 50px;
+    color: #ffffff;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    top: 20px;
+  }
+
+  .product-new {
+    background: #099102;
+  }
+
+  .product-discount {
+    background: @hover-color;
+  }
+
+  .product-new:before,
+  .product-discount:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 3px;
+    border: 3px solid transparent;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    top: -5px;
+  }
+
+  .product_price .product_price-old {
+    color:  @third-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: line-through;
+    display: none;
+  }
+
+  .product.new {
+    .product-new {
+      display: block;
+    }
+  }
+
+  .product.discount {
+    .product-discount {
+      display: block;
+    }
+
+    .product_price .product_price-old {
+      display: inline;
+    }
+
+  }
+
+  .product.discount.new {
+    .product-new,
+    .product-discount {
+      display: block;
+    }
+
+    .product-new {
+      top: 55px;
+    }
+  }
+
+  a.basket {
+    position: absolute;
+    top: 117px;
+    left: 44%;
   }
 }
