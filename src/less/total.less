@@ -60,6 +60,15 @@ a.basket {
 }
 
 .slider {
+  article {
+    margin: 40px 0;
+  }
+
+  .item {
+    padding: 15px 15px 45px;
+    margin: 10px;
+  }
+
   h2 {
     color: @second-color;
     font-size: 24px;
@@ -87,25 +96,100 @@ a.basket {
     outline: none;
   }
 
-  .product {
-    padding: 15px 15px 45px;
-    margin: 10px;
+  .gallery {
+    .item {
+      padding: 0;
 
+      a {
+        position: relative;
+        display: block;
+        padding: 90px 0;
+        color: @main-color;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        .item_description {
+          background: rgba(255, 255, 255, 0.6);
+          padding: 10px 0 52px;
+        }
+
+        .item_frame {
+          border: 2px solid @second-color;
+          opacity: 0.5;
+          position: absolute;
+          top: 20px;
+          bottom: 20px;
+          left: 20px;
+          right: 20px;
+        }
+      }
+    }
+
+    .item a:hover {
+      box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.33) inset;;
+    }
+
+    .item .gallery_kitchen {
+      background: url("../../img/kitchen-designer.png") no-repeat;
+
+      .item_description::before {
+        content: url("../../img/book.png");
+        display: block;
+      }
+    }
+
+    .item .gallery_wardrobe {
+      background: url("../../img/wardrobe-designer.png") no-repeat;
+
+      .item_description::before {
+        content: url("../../img/book2.png");
+        display: block;
+      }
+    }
+
+    .item .gallery_bank {
+      background: url("../../img/bank.png") no-repeat;
+
+      .item_description::before {
+        content: url("../../img/book3.png");
+        display: block;
+      }
+    }
+
+    .item .gallery_article {
+      background: url("../../img/article.png") 100% 100% no-repeat;
+
+      .item_description::before {
+        content: url("../../img/icon_article.png");
+        display: block;
+      }
+    }
+
+    .item .gallery_video {
+      background: url("../../img/video.png") no-repeat;
+
+      .item_description::before {
+        content: url("../../img/icov_video.png");
+        display: block;
+      }
+    }
   }
 }
 
 .assortment {
 
-  .product {
+  .item {
     position: relative;
-
     border: 1px solid #e5e5e5;
     color: #333333;
-    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 700;
-    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    line-height: 24px;
     text-transform: uppercase;
-
 
     div {
       margin: 10px 0;
@@ -160,13 +244,13 @@ a.basket {
     display: none;
   }
 
-  .product.new {
+  .item.new {
     .product-new {
       display: block;
     }
   }
 
-  .product.discount {
+  .item.discount {
     .product-discount {
       display: block;
     }
@@ -177,7 +261,7 @@ a.basket {
 
   }
 
-  .product.discount.new {
+  .item.discount.new {
     .product-new,
     .product-discount {
       display: block;
@@ -202,7 +286,7 @@ a.basket {
     left: 44%;
   }
 
-  .product:hover {
+  .item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     .basket {
