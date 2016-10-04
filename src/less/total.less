@@ -377,5 +377,68 @@ footer {
   div {
     padding: 30px 0;
   }
+}
+
+.modal {
+  .invisible {
+    display: none;
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .modal-header {
+    padding: 0;
+    .close {
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  .modal-body {
+    background-color: white;
+    padding: 45px 25px;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: @main-color;
+      font-weight: 800;
+    }
+
+    span {
+      color: darkgray;
+    }
+
+    .btn {
+      text-transform: uppercase;
+      background: @second-color;
+      color: @main-color;
+      font-weight: 800;
+      padding: 12px;
+      margin-top: 60px;
+    }
+
+    .registration {
+      margin-top: 60px;
+      color: @main-color;
+      text-align: center;
+    }
+    
+    .valid::before {
+      content: url("../../img/icon-valid-registration.png");
+      display: block;
+    }
+    
+    .invalid::before {
+      content: url("../../img/icon-invalid-registration.png");
+      display: block;
+    }
+  }
 
 }

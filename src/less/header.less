@@ -78,6 +78,53 @@ header {
       color: @second-color;
     }
   }
+
+  .form-group {
+    border-radius: 3px;
+    border: 1px solid @grey-color;
+
+    .form-control,
+    button {
+      border: none;
+      height: 28px;
+      padding: 2px 6px;
+    }
+
+    .form-control {
+      width: 224px;
+    }
+
+    ::-webkit-input-placeholder {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    button {
+      i {
+        color: @second-color;
+      }
+    }
+
+    button:hover {
+      background: none;
+
+      i {
+        color: @hover-color;
+
+      }
+    }
+
+    button:focus {
+      background: none;
+      outline: none;
+
+      i {
+        color: @third-color;
+
+      }
+    }
+
+  }
 }
 
 .header_search {
@@ -96,52 +143,7 @@ p {
   }
 }
 
-.form-group {
-  border-radius: 3px;
-  border: 1px solid @grey-color;
 
-  .form-control,
-  button {
-    border: none;
-    height: 28px;
-    padding: 2px 6px;
-  }
-
-  .form-control {
-    width: 224px;
-  }
-
-  ::-webkit-input-placeholder {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  button {
-    i {
-      color: @second-color;
-    }
-  }
-
-  button:hover {
-    background: none;
-
-    i {
-      color: @hover-color;
-
-    }
-  }
-
-  button:focus {
-    background: none;
-    outline: none;
-
-    i {
-      color: @third-color;
-
-    }
-  }
-
-}
 
 .header_user_order-product,
 .header_user_order-price,

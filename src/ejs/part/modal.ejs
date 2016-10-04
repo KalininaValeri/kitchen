@@ -1,7 +1,27 @@
-<div class="modal fade header_logo_callback" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
+<div class="modal fade header_logo_callback" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            Обартный звонок
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">close</i></button>
+            </div>
+            <div class="modal-body">
+                <h3>Обратный звонок</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">ФИО</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" class="form-control" id="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="question">Вопрос</label>
+                        <textarea class="form-control" rows="3" id="question"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block">Перезвоните мне</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -9,7 +29,23 @@
 <div class="modal fade header_user_enter" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-            Вход
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">close</i></button>
+            </div>
+            <div class="modal-body">
+                <h3>Вход</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="login">Ваш логин</label>
+                        <input type="text" class="form-control" id="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-block">войти</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -17,7 +53,37 @@
 <div class="modal fade header_user_registration" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-            Регистрация
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">close</i></button>
+            </div>
+            <div class="modal-body">
+                <h3>Регистрация</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="inputLogin">Логин <span>(латинскими буквами)</span></label>
+                        <input type="text" class="form-control" id="inputLogin">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Пароль</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Повторите пароль</label>
+                        <input type="password" class="form-control" id="confirmPassword">
+                    </div>
+                    <button type="submit" class="btn btn-block">зарегистироваться</button>
+                    <div class="valid registration invisible">
+                        Вы были успешно зарегистрированы
+                    </div>
+                    <div class="invalid registration invisible">
+                        Логин должен быть длиннее трех символов
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
