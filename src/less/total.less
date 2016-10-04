@@ -149,8 +149,9 @@ a.basket {
         text-decoration: none;
 
         .item_description {
-          background: rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, 0.8);
           padding: 10px 0 52px;
+          height: 173px;
         }
 
         .item_frame {
@@ -166,11 +167,12 @@ a.basket {
     }
 
     .item a:hover {
-      box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.33) inset;;
+      box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.33) inset;
     }
 
     .item .gallery_kitchen {
-      background: url("../../img/kitchen-designer.png") no-repeat;
+      background: url("../../img/konstr.png") no-repeat;
+      background-size: cover;
 
       .item_description::before {
         content: url("../../img/book.png");
@@ -179,7 +181,8 @@ a.basket {
     }
 
     .item .gallery_wardrobe {
-      background: url("../../img/wardrobe-designer.png") no-repeat;
+      background: url("../../img/konst-wardrobe.png") no-repeat;
+      background-size: cover;
 
       .item_description::before {
         content: url("../../img/book2.png");
@@ -188,28 +191,45 @@ a.basket {
     }
 
     .item .gallery_bank {
-      background: url("../../img/bank.png") no-repeat;
+      background: url("../../img/bank (2).png") no-repeat;
+      background-size: cover;
 
       .item_description::before {
         content: url("../../img/book3.png");
+        background-size: cover;
         display: block;
       }
     }
 
     .item .gallery_article {
-      background: url("../../img/article.png") 100% 100% no-repeat;
+      background: url("../../img/article (2).png") no-repeat;
+      background-size: cover;
 
       .item_description::before {
         content: url("../../img/icon_article.png");
+        background-size: cover;
         display: block;
       }
     }
 
     .item .gallery_video {
-      background: url("../../img/video.png") no-repeat;
+      background: url("../../img/video (2).png") no-repeat;
+      background-size: cover;
 
       .item_description::before {
         content: url("../../img/icov_video.png");
+        background-size: cover;
+        display: block;
+      }
+    }
+
+    .item .gallery_photo {
+      background: url("../../img/photogallery (2).png") no-repeat;
+      background-size: cover;
+
+      .item_description::before {
+        content: url("../../img/icon_photo.png");
+
         display: block;
       }
     }
