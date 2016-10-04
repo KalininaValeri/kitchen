@@ -113,9 +113,6 @@
 padding-top: 133px;
 }
 
-
-
-
 .carousel-indicators {
   left: 75px;
 }
@@ -136,3 +133,71 @@ padding-top: 133px;
   background: @second-color;
 }
 
+.order {
+  h2 {
+    color:  @second-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    span {
+      color: @main-color;
+    }
+  }
+
+  li {
+    margin: 10px 0;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}
+
+.articles {
+
+  h5 {
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 800;
+  }
+
+  hr {
+    position: relative;
+    margin-left: 0;
+    width: 80px;
+  }
+
+
+  hr::before,
+  hr::after{
+    right: 43px;
+    top: -5px;
+  }
+
+  hr::after {
+    right: 33px;
+  }
+
+  p {
+    color: @third-color;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  a {
+    color: @second-color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: @hover-color;
+  }
+
+  a:active {
+    color: @third-color;
+  }
+}

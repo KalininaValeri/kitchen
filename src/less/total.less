@@ -11,6 +11,10 @@ a {
   outline: none;
 }
 
+article {
+  margin-top: 60px;
+}
+
 .basket {
   background: @second-color;
   border: none;
@@ -31,6 +35,21 @@ a.basket {
 
 .basket:focus {
   background: @third-color;
+}
+
+.slider .slider_panel::before,
+.slider .slider_panel::after,
+.articles hr::before,
+.articles hr::after{
+  content: '';
+  background: white;
+  border: 1px solid #ccc;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  position: absolute;
+  right: 53px;
+  top: 11px;
 }
 
 .advantages {
@@ -78,18 +97,7 @@ a.basket {
     top: -15px;
   }
 
-  .slider_panel::before,
-  .slider_panel::after {
-    content: '';
-    background: white;
-    border: 1px solid #ccc;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    position: absolute;
-    right: 53px;
-    top: 11px;
-  }
+
 
   .slider_panel::after {
     right: 43px;
