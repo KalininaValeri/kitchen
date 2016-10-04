@@ -40,7 +40,7 @@ a.basket {
 .slider .slider_panel::before,
 .slider .slider_panel::after,
 .articles hr::before,
-.articles hr::after{
+.articles hr::after {
   content: '';
   background: white;
   border: 1px solid #ccc;
@@ -83,7 +83,6 @@ a.basket {
     margin-top: 60px;
     position: relative;
 
-
   }
 
   .item {
@@ -96,8 +95,6 @@ a.basket {
     right: 0;
     top: -15px;
   }
-
-
 
   .slider_panel::after {
     right: 43px;
@@ -339,21 +336,20 @@ footer {
   background: #f2f2f2;
   padding: 45px 80px;
 
+  .navigation {
+    padding: 0;
 
-  ul {
-    color: @main-color;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
-
-
-  li {
-    text-transform: none;
-    text-decoration: underline;
-    font-weight: 400;
+    ul {
+      color: @main-color;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
 
     a {
       color: @third-color;
+      text-transform: none;
+      text-decoration: underline;
+      font-weight: 400;
     }
 
     a:hover {
@@ -363,5 +359,23 @@ footer {
     a:focus {
       color: @main-color;
     }
+
   }
+
+  .contacts, div {
+    font-weight: 700;
+  }
+
+  .contacts :first-child, div {
+    color: @main-color;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  div {
+    padding: 30px 0;
+  }
+
 }
