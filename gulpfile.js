@@ -8,7 +8,7 @@ var ejsData = require('./ejs-data');
 gulp.task('default', ['watch']);
 
 gulp.task('less', function () {
-    return gulp.src('./src/less/style.less')
+    return gulp.src(['./src/less/style.less', './src/less/media.less'])
         .pipe(less())
         .pipe(gulp.dest('build/css'));
 });
