@@ -11,7 +11,7 @@ a {
   outline: none;
 }
 
-article {
+section {
   margin-top: 60px;
 }
 
@@ -37,6 +37,27 @@ a.basket {
   background: @third-color;
 }
 
+hr.beautiful {
+  position: relative;
+}
+
+hr.beautiful::before,
+hr.beautiful::after {
+  content: '';
+  background: white;
+  border: 1px solid #ccc;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  position: absolute;
+  left: 15px;
+  top: -4px;
+}
+
+hr.beautiful::after {
+  left: 25px;
+}
+
 .slider .slider_panel::before,
 .slider .slider_panel::after,
 .articles hr::before,
@@ -50,6 +71,68 @@ a.basket {
   position: absolute;
   right: 53px;
   top: 11px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  a {
+    color: @third-color;
+  }
+
+  li.active {
+    color: @main-color;
+  }
+}
+
+.item {
+  padding: 15px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+
+  img {
+    width: 100%;
+  }
+}
+
+.product-discount,
+.product-new {
+  position: absolute;
+  left: 10px;
+  display: none;
+  width: 50px;
+  color: #ffffff;
+  font-size: 14px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 24px; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  top: 20px;
+}
+
+.item.discount {
+  .product-discount {
+    display: block;
+  }
+}
+
+.product-new {
+  background: #099102;
+}
+
+.product-discount {
+  background: @hover-color;
+}
+
+.product-new:before,
+.product-discount:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 3px;
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  top: -5px;
 }
 
 .advantages {
@@ -82,12 +165,12 @@ a.basket {
   article {
     margin-top: 60px;
     position: relative;
-
   }
 
   .item {
-    padding: 15px 15px 45px;
+    padding-bottom: 45px;
     margin: 10px;
+    border: none;
   }
 
   .slider_panel {
@@ -239,13 +322,12 @@ a.basket {
 .assortment {
 
   .item {
-    position: relative;
-    border: 1px solid #e5e5e5;
     color: #333333;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    border: 1px solid #e5e5e5;
 
     div {
       margin: 10px 0;
@@ -255,40 +337,6 @@ a.basket {
   .product_price span {
     color: @hover-color;
     font-size: 24px; /* Приближение из-за подстановки шрифтов */
-  }
-
-  .product-discount,
-  .product-new {
-    position: absolute;
-    left: 10px;
-    display: none;
-    width: 50px;
-    color: #ffffff;
-    font-size: 14px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 24px; /* Приближение из-за подстановки шрифтов */
-    text-align: center;
-    top: 20px;
-  }
-
-  .product-new {
-    background: #099102;
-  }
-
-  .product-discount {
-    background: @hover-color;
-  }
-
-  .product-new:before,
-  .product-discount:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 3px;
-    border: 3px solid transparent;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    top: -5px;
   }
 
   .product_price .product_price-old {
@@ -314,7 +362,6 @@ a.basket {
     .product_price .product_price-old {
       display: inline;
     }
-
   }
 
   .item.discount.new {
@@ -348,6 +395,39 @@ a.basket {
     .basket {
       display: inline-block;
     }
+  }
+}
+
+.slider-mod-small {
+  padding: 0 35px;
+  position: relative;
+
+  .item {
+    height: 151px;
+    width: 151px;
+    margin: 0 5px;
+
+    img {
+      height: 100%;
+    }
+
+  }
+  .btn-next,
+  .btn-prev {
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    width: 35px;
+    height: 151px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .btn-next {
+    left: auto;
+    right: 0;
+    margin: 0;
   }
 }
 
@@ -449,12 +529,12 @@ footer {
       color: @main-color;
       text-align: center;
     }
-    
+
     .valid::before {
       content: url("../../img/icon-valid-registration.png");
       display: block;
     }
-    
+
     .invalid::before {
       content: url("../../img/icon-invalid-registration.png");
       display: block;

@@ -1,0 +1,318 @@
+<% var title = 'Куба белая'; %>
+<% include part/begin-html.ejs %>
+<div class="container">
+    <% include part/header.ejs %>
+    <ol class="breadcrumb">
+        <li><a href="./main.html">Классика кухни</a></li>
+        <li><a href="#">Кухня</a></li>
+        <li><a href="#">Куба. Эксклюзивный проект</a></li>
+        <li class="active">Куба белая</li>
+    </ol>
+    <main>
+        <section class="card_product">
+            <div class="row">
+                <article class="col-md-8">
+                    <figure class="item discount">
+                        <img src="../../img/card_product.png" alt="">
+                        <div class="product-discount">-20%</div>
+                    </figure>
+
+                </article>
+                <article class="card_product_function col-md-4">
+                    <h1>Куба белая</h1>
+                    <h6>Артикул 15125</h6>
+                    <hr class="beautiful">
+                    <div class="card_product_function_price clearfix">
+                        <div class="pull-left">
+                            <span>59 000</span> руб.
+                            <p>Стоимость базовой версии</p>
+                        </div>
+                        <a href="#" class="pull-right card_product_function_price_question">
+                            <div></div>
+                        </a>
+                        <form class="pull-right" action="">
+                            <button class="btn btn-block">Под заказ</button>
+                        </form>
+
+                    </div>
+                    <hr>
+                    <div class="card_product_function_option row">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="../../img/icon_yoer_progect.png" alt="Свой проект">
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Создать свой проект в 3D</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="../../img/icon_free_measurement.png" alt="Замер">
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Бесплатный замер</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="../../img/icon_free_project.png" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Бесплатный проект</span></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="../../img/icon_order_model.png" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Заказать эту модель</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="../../img/icon_buy_installments.png" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Купить в рассрочку</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="../../img/icon_bank_3d.png" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <span>Банк проектов 3D</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <form class="card_product_function_button">
+                        <button class="btn btn-block card_product_function_button_buy">купить в 1 клик</button>
+                    </form>
+                    <form class="card_product_function_button">
+                        <button class="btn btn-block card_product_function_button_action">получить персональную скидку</button>
+                    </form>
+                    <p class="card_product_function_manufacturer">Производитель: «Классика кухни»</p>
+                </article>
+                <div class="row">
+                    <article class="col-md-8">
+                        <div class="slider-mod-small">
+                            <button id="photoPrev" class="btn-prev btn btn-default btn-block">
+                                <i class="material-icons">navigate_before</i>
+                            </button>
+                            <button id="photoNext" class="btn-next btn btn-default btn-block">
+                                <i class="material-icons">navigate_next</i>
+                            </button>
+                            <div class="assortment">
+
+                                <div class="">
+                                    <div id="productsPhoto">
+                                        <figure class="item">
+                                            <img src="../../img/product.png" alt="Продукт">
+                                        </figure>
+                                        <figure class="item">
+                                            <img src="../../img/product.png" alt="Продукт">
+                                        </figure>
+                                        <figure class="item">
+                                            <img src="../../img/product.png" alt="Продукт">
+                                        </figure>
+                                        <figure class="item">
+                                            <img src="../../img/product.png" alt="Продукт">
+                                        </figure>
+                                        <figure class="item">
+                                            <img src="../../img/product.png" alt="Продукт">
+                                        </figure>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 main_header">
+                        <div class="main_header_designer">
+                            <h4>3D конструктор</h4>
+                            <a href="#">онлайн расчет</a>
+                            <!--<div class="dimmer"></div>-->
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="card_caption">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">описание</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="profile" role="tab" data-toggle="tab">параметры</a></li>
+                <li role="presentation"><a href="#shipping" aria-controls="messages" role="tab" data-toggle="tab">доставка и оплата</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <article role="tabpanel" class="tab-pane active" id="description">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate deleniti dolorem eum illo
+                        incidunt ipsam laudantium nesciunt placeat porro qui, quisquam ratione reprehenderit ullam velit.
+                        Accusantium, adipisci aliquid consequatur cumque deserunt dignissimos dolore dolores esse et excepturi
+                        incidunt magni molestiae nemo nihil non perferendis quia quibusdam, ratione rem rerum.
+                        Ab asperiores, assumenda, beatae commodi deleniti doloribus ducimus inventore iste laborum
+                        molestias possimus qui quibusdam quidem rem sint. Asperiores atque delectus dicta dolor
+                        error illum iusto magnam modi odio praesentium. Alias aliquid amet animi architecto asperiores
+                        aut deserunt dicta distinctio dolore eius eos error ex expedita facere facilis ipsa magnam,
+                        mollitia nam neque omnis optio quam quas quisquam quos repellat repellendus repudiandae rerum
+                        sed sequi sit unde velit veritatis vero. Ad impedit laboriosam maxime quidem sed. Iure libero
+                        nisi quidem quod sequi, voluptatem. Accusantium adipisci aperiam consectetur corporis, debitis
+                        earum eveniet expedita hic libero, modi, natus officia pariatur quia quis sint vero voluptatibus.
+                        Asperiores assumenda corporis ducimus fugiat hic incidunt maxime nemo, nihil nisi nulla quam
+                        suscipit ullam? Accusamus, adipisci atque aut cupiditate dolorum error expedita explicabo in
+                        ipsa molestias perferendis porro sapiente soluta, ut vitae voluptas voluptate! Accusantium at
+                        beatae consequuntur deserunt ea est eveniet explicabo harum maiores minima minus modi odit,
+                        possimus quam quibusdam reiciendis, veniam vero. Adipisci aliquid architecto at autem blanditiis
+                        commodi debitis deserunt doloremque eligendi error exercitationem facere fuga hic incidunt ipsum
+                        itaque labore maxime molestiae, mollitia, natus nihil odio omnis placeat quam quibusdam quisquam
+                        similique sint sit tempore temporibus tenetur ullam unde vel. Asperiores, consequatur cupiditate
+                        deserunt dolorum ea explicabo illo ipsa laboriosam laborum minus, neque porro recusandae rem,
+                        repellendus sed sequi totam vero vitae! A adipisci alias aliquam, aliquid aut, consectetur deserunt
+                        dignissimos, dolorem eaque esse est excepturi exercitationem explicabo fugiat fugit impedit
+                        ipsam ipsum laborum modi neque nobis odit omnis porro praesentium quasi quo reprehenderit sint
+                        sit tenetur ut veniam veritatis vitae voluptas. Accusamus alias amet aut autem consequuntur
+                        dolorem enim error harum illo magnam maxime molestias, nostrum officiis, perferendis perspiciatis
+                        quidem rem sit temporibus tenetur voluptate? Alias aliquam assumenda at consequatur cumque
+                        delectus dolore ea, et hic, ipsam ipsum laudantium modi nihil nulla obcaecati officiis pariatur
+                        perferendis possimus qui quis quod reprehenderit saepe sed vitae voluptas! Adipisci aliquam animi
+                        architecto asperiores at autem commodi consectetur consequuntur culpa cum dolorum eligendi eos
+                        eum harum hic laborum modi mollitia nesciunt, nulla quas qui quia quis recusandae rem repellat
+                        sequi suscipit tenetur ullam unde vitae. Accusantium animi architecto atque dicta doloribus est
+                        exercitationem expedita, explicabo laborum modi natus neque odio quidem quod ratione voluptates
+                        voluptatibus! Autem beatae, consequatur corporis cupiditate dolores excepturi, impedit incidunt
+                        ipsam maiores nostrum quas quis rerum, voluptates! Ab accusamus architecto asperiores culpa
+                        debitis deleniti distinctio doloremque, dolorum eius eligendi enim est ex id ipsa ipsam laboriosam
+                        maiores nesciunt nulla odio placeat possimus qui quisquam rerum vel veniam veritatis vitae voluptatum!
+                        Exercitationem harum labore magni officia quae quia, sint? Ad aliquid consectetur dolorum facere
+                        ipsa magni nemo omnis perspiciatis velit vitae. Adipisci aliquam architecto aut commodi cupiditate
+                        ducimus ex id maxime natus nobis non, optio placeat quaerat quidem quisquam ratione reiciendis
+                        voluptates. Aspernatur ipsum obcaecati quae. Accusamus ad adipisci at consequatur culpa, dolores
+                        molestias nam nihil quasi unde veniam voluptates voluptatum! Accusantium adipisci at, dolorem ea
+                        eaque error harum inventore, iste neque, nulla numquam sunt suscipit temporibus tenetur voluptas.
+                        Ab corporis exercitationem, fugiat, ipsum mollitia neque perspiciatis quasi reiciendis sunt
+                        tenetur vitae voluptatibus voluptatum! Ab accusamus adipisci asperiores aspernatur atque dolorem
+                        facere impedit iste necessitatibus omnis pariatur perspiciatis quos tempora unde, voluptatum!
+                        Amet animi aperiam aspernatur aut consequatur cumque eligendi esse et eum expedita hic id iste
+                        itaque labore maiores nemo nulla odit omnis, porro quam quia quo quod quos ratione recusandae r
+                        em reprehenderit repudiandae rerum saepe totam veniam vitae voluptate voluptates. Accusantium
+                        aliquid amet animi consequuntur dolores excepturi exercitationem fugiat illum impedit in incidunt
+                    </p>
+                </article>
+
+                <article role="tabpanel" class="tab-pane" id="settings">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis ducimus eum fugiat
+                        porro, possimus repellendus. Deserunt officiis quaerat rem.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam dolores doloribus
+                        iusto magnam odio rerum. Dolor ex excepturi id magnam molestias quae reiciendis tenetur veritatis.
+                        Doloribus ea excepturi impedit, itaque quibusdam ratione sed suscipit vero voluptate. Numquam,
+                        veritatis, voluptas! Adipisci fuga incidunt inventore necessitatibus perspiciatis voluptatibus.
+                        Aliquam animi autem commodi, dignissimos doloremque doloribus ducimus eveniet facere harum ipsa,
+                        maiores natus neque nisi nobis, officia quia quis quisquam reprehenderit sapiente soluta sunt
+                        tempora vero vitae! Ab aliquam aperiam atque, cumque dolore laboriosam neque odit, omnis quas
+                        reiciendis vel veniam vitae voluptate. Aliquid, delectus distinctio iste nihil placeat suscipit
+                        vel voluptate.
+                    </p>
+                    <h3>Lorem ipsum dolor.</h3>
+                    <p>
+                        Возврат возможен при условии ненадлежащего качества товара на момент подписания акта
+                        приема-передачи. Во всех других случаях возможность возврата товара осуществляется в
+                        индивидуальном порядке, или в соответствии с Законом РФ о Правах потребителей.
+                    </p>
+                </article>
+                <article role="tabpanel" class="tab-pane" id="shipping">
+                    <p>
+                        Мебель доставляется в собранном виде в индивидуальной упаковке. Сроки доставки товара
+                        оговаривается при заключении договора. За день до даты доставки с вами свяжется наш оператор для
+                        уточнения деталей. В день доставки, для вашего удобства, водитель максимально точно сориентирует
+                        вас по времени прибытия.
+                    </p>
+                    <p>
+                        Обязательным условием для бесплатного подъёма товара на этаж является наличие грузового лифта,
+                        в иных случаях данная услуга платная. Стоимость услуги можно уточнить у оператора.
+                    </p>
+                    <h3>Возврат товара</h3>
+                    <p>
+                        Возврат возможен при условии ненадлежащего качества товара на момент подписания акта
+                        приема-передачи. Во всех других случаях возможность возврата товара осуществляется в
+                        индивидуальном порядке, или в соответствии с Законом РФ о Правах потребителей.
+                    </p>
+                    <h3>Срок поставки</h3>
+                    <p>
+                        При условии наличия товара на складе доставка осуществляется в 3-х дневный срок. Товары, в
+                        статусе которых указано «под заказ», доставляются в срок от 1 до 5 недель.
+                    </p>
+                    <p>
+                        Обращайте внимание на статус товара, где указаны примерные сроки поставки. Подробнее уточните по
+                        телефону у наших операторов.
+                    </p>
+                    <h3>Стоимость доставки</h3>
+                    <ul>
+                        <li>Стоимость доставки по г. Мытищи 1200 руб.</li>
+                        <li>2000 руб. — Доставка по Москве. Центр и внутри ТТК</li>
+                        <li>2500 руб. — Доставка по Москве в пределах 10 км. от МКАД, (Кроме г. Мытищи)</li>
+                        <li>3000 руб. — Доставка по МО 10-20 км от МКАД</li>
+                        <li>3500 руб. — Доставка по МО 20-30 км от МКАД</li>
+                        <li>4000 руб. — Доставка по МО 30-40 км от МКАД</li>
+                    </ul>
+
+
+                    <p>Стоимость доставки мебели в другие регионы России можно уточнить у операторов.</p>
+                    <h3>Сборка</h3>
+                    <p>
+                        Внимание! Покупатель вправе осуществить сборку мебели своими силами, но в таких случаях гарантия
+                        на монтаж мебели недействительна. Ровно, как и на повреждения, причиненные в момент самостоятельной сборки.
+                    </p>
+                    <p>
+                        Мы рекомендуем воспользоваться услугами наших профессиональных сборщиков, это поможет избежать
+                        всяческих проблем с дальнейшей эксплуатацией вашей мебели, и сохранит возможность гарантийного
+                        и сервисного обслуживания. Стоимость сборки варьируется в пределах от 5 до 10% от цены мебели,
+                        в зависит от сложности монтажа.
+                    </p>
+                    <p>
+                        Внимание! Специалисты по сборке не оказывают услуг по подключению инженерных сетей
+                        (вода, газ, электроприборы). В случае, если сборщики осуществили такого рода услуги по вашей
+                        личной просьбе, гарантия и ответственность на эти работы не распространяется.
+                    </p>
+                    <h3>Гарантия</h3>
+                    <p>
+                        Гарантия на монтаж составляет 2 года. Гарантия на мебель составляет 5 лет.Основным условием на
+                        гарантийное (бесплатное) обслуживание является надлежащее использование, исключающее механические
+                        перегрузки, небрежную эксплуатацию, физические повреждения (царапины, сколы), проникновение
+                        жидкостей, грязи, и прочих посторонних воздействий.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="slider">
+            <% var sliderTitle = 'Похожие товары'; %>
+            <% include part/slider.ejs %>
+        </section>
+
+
+    </main>
+    <% include part/footer.ejs %>
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>

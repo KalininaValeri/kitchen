@@ -1,4 +1,5 @@
 <% var title = 'Главная'; %>
+
 <% include part/begin-html.ejs %>
 
 <div class="container">
@@ -54,7 +55,114 @@
             </div>
         </section>
         <% include part/advantages.ejs %>
-        <% include part/slider.ejs %>
+        <section class="slider">
+            <% var sliderTitle = 'Товары по акции'; %>
+            <% include part/slider.ejs %>
+            <article class="gallery">
+                <div class="slider_panel" id="nav">
+                    <button id="designerPrev" class="lera btn-prev btn btn-default"><i class="material-icons">navigate_before</i>
+                    </button>
+                    <button id="designerNext" class="btn-next btn btn-default"><i class="material-icons">navigate_next</i></button>
+                </div>
+
+                <h2 class="">
+                    конструктор 3D онлайн
+                </h2>
+                <hr>
+                <div class="clearfix"></div>
+                <div id="designer">
+                    <div class="item">
+                        <a class="gallery_kitchen" href="#">
+                            <div class="item_description">3D конструктор <br>
+                                кухни
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_wardrobe" href="#">
+                            <div class="item_description">3D конструктор <br>
+                                шкафов
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_bank" href="#">
+                            <div class="item_description">банк проектов <br>
+                                3D
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_kitchen" href="#">
+                            <div class="item_description">3D конструктор <br>
+                                кухни
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_wardrobe" href="#">
+                            <div class="item_description">3D конструктор <br>
+                                шкафов
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_bank" href="#">
+                            <div class="item_description">банк проектов <br>
+                                3D
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="gallery">
+                <div class="slider_panel" id="nav">
+                    <button id="encyclopediaPrev" class="lera btn-prev btn btn-default"><i class="material-icons">navigate_before</i>
+                    </button>
+                    <button id="encyclopediaNext" class="btn-next btn btn-default"><i class="material-icons">navigate_next</i></button>
+                </div>
+
+                <h2 class="">
+                    конструктор 3D онлайн
+                </h2>
+                <hr>
+                <div class="clearfix"></div>
+                <div id="encyclopedia">
+                    <div class="item">
+                        <a class="gallery_article" href="#">
+                            <div class="item_description">полезные <br>
+                                статьи
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_video" href="#">
+                            <div class="item_description">Видео-зал <br>
+                                Доступно и обо всем
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="gallery_photo" href="#">
+                            <div class="item_description">фотогалерея <br>
+                                реализованных проектов
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
         <section>
             <article class="order">
                 <h2>Кухни на заказ <span>недорого от производителя</span></h2>
