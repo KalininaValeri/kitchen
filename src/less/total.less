@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+  url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+  url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 body {
   color: #333333;
   font-family: 'Roboto', sans-serif;
@@ -58,6 +70,12 @@ hr.beautiful::after {
   left: 25px;
 }
 
+.btn-orange {
+  color: @main-color;
+  background: @second-color;
+  padding: 20px 0;
+}
+
 .slider .slider_panel::before,
 .slider .slider_panel::after,
 .articles hr::before,
@@ -90,9 +108,10 @@ hr.beautiful::after {
   position: relative;
   border: 1px solid #e5e5e5;
 
-  img {
-    width: 100%;
-  }
+}
+
+.item > img {
+  width: 100%;
 }
 
 .product-discount,
