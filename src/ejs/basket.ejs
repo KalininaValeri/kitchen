@@ -1,8 +1,134 @@
-<% var title = 'Акции'; %>
+<% var title = 'Корзина'; %>
 <% include part/begin-html.ejs %>
 <div class="container">
     <% include part/header.ejs %>
-    
+    <main class="page_basket">
+        <h1 class="text-uppercase">корзина</h1>
+        <section>
+            <table class="table table-bordered text-uppercase">
+                <thead>
+                <tr>
+                    <th>наименование товара</th>
+                    <th>цена, руб.</th>
+                    <th>количество</th>
+                    <th>стоимость, руб.</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <figure class="item pull-left">
+                            <img src="../../img/product.png" alt="">
+                        </figure>
+                        <strong>Куба белая</strong>
+                    </td>
+                    <td><strong>183000</strong></td>
+                    <td class="form-inline">
+
+                        <button type="button" class="btn btn-default"><i class="material-icons">add</i></button>
+
+                        <input type="text" class="form-control">
+
+                        <button type="button" class="btn btn-default"><i class="material-icons">remove</i></button>
+                    </td>
+                    <td><strong>183000</strong></td>
+                    <td>
+                        <button class="btn-orange btn"><i class="material-icons">clear</i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure class="item pull-left">
+                            <img src="../../img/product.png" alt="">
+                        </figure>
+                        <strong>Куба белая</strong>
+                    </td>
+                    <td><strong>183000</strong></td>
+                    <td class="form-inline">
+
+                        <button type="button" class="btn btn-default"><i class="material-icons">add</i></button>
+
+                        <input type="text" class="form-control">
+
+                        <button type="button" class="btn btn-default"><i class="material-icons">remove</i></button>
+                    </td>
+                    <td><strong>183000</strong></td>
+                    <td>
+                        <button class="btn-orange btn"><i class="material-icons">clear</i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="basket_summ_price text-right" colspan="5">
+                        <strong>
+                            ИТОГО:
+                            <span>366000</span>
+                            руб
+                        </strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <form class="row" action="">
+                <fieldset class="col-md-4">
+                    <legend>контактные данные</legend>
+                    <div class="form-group">
+                        <label for="dataName">ФИО</label>
+                        <input type="text" class="form-control" id="dataName">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataEmail">Email</label>
+                        <input type="email" class="form-control" id="dataEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataPhone">Телефон</label>
+                        <input type="email" class="form-control" id="dataPhone">
+                    </div>
+                    <button class="btn btn-orange btn-block text-uppercase">
+                        <strong>Купить</strong>
+                    </button>
+                </fieldset>
+                <fieldset class="col-md-5 col-md-offset-1 form-inline page_basket_pay">
+                    <legend>способ оплаты</legend>
+                    <div class="row">
+                        <div class="radio_decoration radio col-xs-6">
+                            <input type="radio" name="inlineRadioOptions" id="cashMethod" value="option1">
+                            <label for="cashMethod" class="radio-inline">
+                                <img src="../../img/icon_cash.png" alt="">
+                                <strong>Наличными</strong>
+                            </label>
+                        </div>
+                        <div class="radio_decoration radio col-xs-6">
+                            <input type="radio" name="inlineRadioOptions" id="cardMetod" value="option2">
+                            <label for="cardMetod" class="radio-inline">
+                                <img src="../../img/icon_card.png" alt="">
+                                <strong>Банковской картой</strong>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="radio_decoration radio col-xs-6">
+                            <input type="radio" name="inlineRadioOptions" id="creditMetod" value="option3">
+                            <label for="creditMetod" class="radio-inline">
+                                <img src="../../img/icon_credit.png" alt="">
+                                <strong>Покупка в кредит</strong>
+                            </label>
+                        </div>
+                        <div class="radio_decoration radio col-xs-6">
+                            <input type="radio" name="inlineRadioOptions" id="transferMetod" value="option3">
+                            <label for="transferMetod" class="radio-inline">
+                                <img src="../../img/icon_transfer.png" alt="">
+                                <strong>Банковский перевод</strong>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
     <% include part/footer.ejs %>
 </div>
 <% include part/modal.ejs %>

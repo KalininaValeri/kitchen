@@ -296,14 +296,6 @@
     padding-right: 10px;
   }
 
-  legend {
-    border: none;
-    color: @main-color;
-    font-size: 17px;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
-
   .card_application_color input[type="radio"]:checked + label::before,
   .card_application_showcase input[type="radio"]:checked + label::before {
     border: 1px solid @hover-color
@@ -315,8 +307,7 @@
   }
 
   .card_application_color label::before,
-  .card_application_showcase label::before,
-  .radio_decoration label::before {
+  .card_application_showcase label::before {
     content: '';
     display: inline-block;
     width: 35px;
@@ -325,7 +316,7 @@
     top: 0;
   }
 
-  .radio_decoration label::before {
+/*  .radio_decoration label::before {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -345,7 +336,7 @@
       content: url("../../img/ic_done_white_16dp_1x.png");
       border: none;
     }
-  }
+  }*/
 
   /*.radio_decoration.active {
     label::before {
