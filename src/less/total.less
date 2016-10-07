@@ -5,6 +5,7 @@ body {
 
 a {
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 * {
@@ -13,6 +14,14 @@ a {
 
 section {
   margin-top: 60px;
+}
+
+.color_orange {
+  color: @second-color;
+}
+
+.color_brown {
+  color: @main-color;
 }
 
 .basket {
@@ -579,5 +588,51 @@ footer {
 
   .about_service h3::before {
     content: url("../../img/icon_about_serv.png");
+  }
+}
+
+.page_discount {
+  img {
+    margin-right: 10px;
+    width: 265px;
+  }
+
+  .page_discount_description {
+    height: 180px;
+    //background: red;
+    overflow-y: hidden;
+    text-overflow: clip;
+  }
+
+  h3 {
+    margin-top: 0;
+
+    small {
+      margin: 10px 0;
+      display: block;
+    }
+
+    .discount_complete {
+      color: @hover-color;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    color: @third-color;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: @hover-color;
+  }
+
+  a:focus {
+    color: @third-color;
   }
 }
