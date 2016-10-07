@@ -329,14 +329,15 @@
         <section class="card_application">
             <h2>заявка</h2>
             <hr>
-            <form>
+            <form class="bid-form">
                 <fieldset class="row">
                     <div class="col-md-4">
                         <div class="form-group card_application_color grup_radio">
                             <span>Верхняя часть</span>
                             <label class="color_orange radio-inline active">
-                                <input type="radio" name="colorTop" id="" value="orange" checked>
+
                             </label>
+                            <input type="radio" name="colorTop" id="" value="orange" checked>
                             <label class="color_brown radio-inline">
                                 <input type="radio" name="colorTop" id="" value="brown">
                             </label>
@@ -398,64 +399,157 @@
                 </fieldset>
                 <hr>
                 <fieldset class="row">
-                    <div class="form-group card_application_showcase col-md-6">
-                        <span>Вариатны витрин</span>
-                        <label class="color_orange radio-inline active">
-                            <input type="radio" name="colorShowcase" id="" value="orange" checked>
-                        </label>
-                        <label class="color_brown radio-inline">
-                            <input type="radio" name="colorShowcase" id="" value="brown">
-                        </label>
-                        <label class="color_green radio-inline">
-                            <input type="radio" name="colorShowcase" id="" value="green">
-                        </label>
-                        <label class="color_milk radio-inline">
-                            <input type="radio" name="colorShowcase" id="" value="milk" checked>
-                        </label>
-                        <label class="color_white radio-inline">
-                            <input type="radio" name="colorShowcase" id="" value="white">
-                        </label>
-                    </div>
-                    <div class="radio_decoration active radio col-md-6">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                            Наличие декоративных элементов
-                        </label>
-                    </div>
-                    <div class="form-group card_application_showcase col-md-12">
-                        <span>Выбор ручек</span>
-                        <h1>Пока не работает</h1>
-                        <!--<div class="slider-mod-small">
-                            <button id="handlePrev" class="btn-prev btn btn-default btn-block">
-                                <i class="material-icons">navigate_before</i>
-                            </button>
-                            <button id="handleNext" class="btn-next btn btn-default btn-block">
-                                <i class="material-icons">navigate_next</i>
-                            </button>
-                            <div class="assortment">
 
-                                <div class="">
+                    <div class="row">
+                        <div class="form-group card_application_showcase col-md-7">
+                            <span>Вариатны витрин</span>
+                            <label class="color_orange radio-inline">
+                                <input type="radio" name="colorShowcase" id="" value="orange" checked>
+                            </label>
+                            <label class="color_brown radio-inline active">
+                                <input type="radio" name="colorShowcase" id="" value="brown">
+                            </label>
+                            <label class="color_green radio-inline">
+                                <input type="radio" name="colorShowcase" id="" value="green">
+                            </label>
+                            <label class="color_milk radio-inline">
+                                <input type="radio" name="colorShowcase" id="" value="milk" checked>
+                            </label>
+                            <label class="color_white radio-inline">
+                                <input type="radio" name="colorShowcase" id="" value="white">
+                            </label>
+                        </div>
+                        <div class="radio_decoration active radio col-md-5">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Наличие декоративных элементов
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="card_application_handle row">
+                        <strong class="col-md-2 text-uppercase">Выбор ручек</strong>
+
+
+                        <div class="form-group col-md-10">
+
+
+
+                            <div class="slider-mod-small">
+                                <button id="handlePrev" type="button" class="btn-prev btn btn-default btn-block">
+                                    <i class="material-icons">navigate_before</i>
+                                </button>
+                                <button id="handleNext" type="button" class="btn-next btn btn-default btn-block">
+                                    <i class="material-icons">navigate_next</i>
+                                </button>
+                                <div class="assortment">
                                     <div id="handle">
-                                        <figure class="item">
-                                            <img src="../../img/product.png" alt="Продукт">
-                                        </figure>
-                                        <figure class="item">
-                                            <img src="../../img/product.png" alt="Продукт">
-                                        </figure>
-                                        <figure class="item">
-                                            <img src="../../img/product.png" alt="Продукт">
-                                        </figure>
-                                        <figure class="item">
-                                            <img src="../../img/product.png" alt="Продукт">
-                                        </figure>
-                                        <figure class="item">
-                                            <img src="../../img/product.png" alt="Продукт">
-                                        </figure>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeHandle" value="">
+                                                <img src="../../img/handle1.jpg" alt="" width="100">
+                                            </label>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
-                        </div>-->
+                        </div>
+
                     </div>
+
+
+
+
+
+
+
+
                 </fieldset>
                 <hr>
                 <fielset>
@@ -577,15 +671,21 @@
                 <fieldset class="card_application_technigue">
                     <legend>какая бытовая техника устанавливается в кухню</legend>
                     <strong>У вас в доме обеспечение</strong>
-                    <div class="radio_decoration">
-                        <label class="radio-inline">
-                            <input type="radio" name="homeFurnishing" id="inlineRadio1" value="option1">
-                            Электрическое
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="homeFurnishing" id="inlineRadio2" value="option2">
-                            Газовое
-                        </label>
+                    <div class="form-inline">
+                        <div class="radio_decoration checkbox">
+                            <label>
+                                <input type="radio" name="homeFurnishing" id="inlineRadio1" value="option1">
+                                Электрическое
+                            </label>
+                        </div>
+                        <div class="radio_decoration active checkbox">
+                            <label>
+                                <input type="radio" name="homeFurnishing" id="inlineRadio2" value="option2">
+                                Газовое
+                            </label>
+                        </div>
+
+
                     </div>
                     <div class="row">
                         <div class="col-md-5">
@@ -593,7 +693,8 @@
                                 <span>Расположение слива под воду</span>
                                 <div class="square_location"></div>
                                 <div class="form-group">
-                                    <label for="drain" class="col-sm-7 control-label">Примерное расстояние от угла, мм</label>
+                                    <label for="drain" class="col-sm-7 control-label">Примерное расстояние от угла,
+                                        мм</label>
                                     <div class="col-sm-5">
                                         <input type="text" class="form-control" id="drain">
                                     </div>
@@ -603,7 +704,8 @@
                                 <span>Расположение слива под воду</span>
                                 <div class="square_location"></div>
                                 <div class="form-group">
-                                    <label for="drain" class="col-sm-7 control-label">Примерное расстояние от угла, мм</label>
+                                    <label for="drain" class="col-sm-7 control-label">Примерное расстояние от угла,
+                                        мм</label>
                                     <div class="col-sm-5">
                                         <input type="text" class="form-control" id="drain">
                                     </div>
@@ -647,12 +749,14 @@
                                 </div>
                                 <div class="checkbox radio_decoration">
                                     <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Посудомоечная машина 60см
+                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Посудомоечная машина
+                                        60см
                                     </label>
                                 </div>
                                 <div class="checkbox radio_decoration">
                                     <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Посудомоечная машина 45 см
+                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Посудомоечная машина
+                                        45 см
                                     </label>
                                 </div>
                                 <div class="checkbox radio_decoration">
@@ -667,14 +771,14 @@
                                 </div>
 
                                 <strong>Предпочтительное расположение духового шкафа</strong>
-                                <div class="checkbox radio_decoration active">
+                                <div class="radio radio_decoration active">
                                     <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> В нижнем шкафу
+                                        <input type="radio" mame="techniqueEmbedded" value=""> В нижнем шкафу
                                     </label>
                                 </div>
                                 <div class="checkbox radio_decoration">
                                     <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> В колонне
+                                        <input type="radio" mame="techniqueEmbedded" value=""> В колонне
                                     </label>
                                 </div>
 
@@ -684,14 +788,14 @@
                         <div class="col-md-2">
                             <div class="grup_radio">
                                 <strong>Вытяжка</strong>
-                                <div class="checkbox radio_decoration  active">
+                                <div class="radio radio_decoration  active">
                                     <label>
-                                        <input type="checkbox" mame="techniqueHood" value=""> Встраиваемая
+                                        <input type="radio" mame="techniqueHood" value=""> Встраиваемая
                                     </label>
                                 </div>
-                                <div class="checkbox radio_decoration">
+                                <div class="radio radio_decoration">
                                     <label>
-                                        <input type="checkbox" mame="techniqueHood" value=""> Купольная
+                                        <input type="radio" mame="techniqueHood" value=""> Купольная
                                     </label>
                                 </div>
                             </div>
@@ -701,34 +805,46 @@
                 <hr>
                 <fieldset>
                     <legend>Столешница и кухонный фартук</legend>
-                    <div class="radio_decoration">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="kitchenApron" value="option1"> Плитка
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="kitchenApron" value="option2"> Стеновая панель
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="kitchenApron" value="option3"> Не требуется
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="kitchenApronPrice" value="option3">
-                            <strong>Включать стоимость столешницы в расчет</strong>
-                        </label>
+                    <div class="form-inline">
+                        <div class="radio_decoration radio">
+                            <label>
+                                <input type="radio" id="kitchenApron" value="option1"> Плитка
+                            </label>
+                        </div>
+                        <div class="radio_decoration radio">
+                            <label>
+                                <input type="radio" id="kitchenApron" value="option2"> Стеновая панель
+                            </label>
+                        </div>
+                        <div class="radio_decoration active radio">
+                            <label>
+                                <input type="radio" id="kitchenApron" value="option3"> Не требуется
+                            </label>
+                        </div>
+                        <div class="radio_decoration checkbox">
+                            <label>
+                                <input type="checkbox" id="kitchenApronPrice" value="option3">
+                                <strong>Включать стоимость столешницы в расчет</strong>
+                            </label>
+                        </div>
+
+
                     </div>
                 </fieldset>
                 <hr>
                 <fieldset class="row">
                     <div class="col-md-5 form-horizontal">
                         <div class="form-group">
-                            <label for="installationDate" class="col-sm-7 control-label">Планируемая дата установки кухни*</label>
+                            <label for="installationDate" class="col-sm-7 control-label">Планируемая дата установки
+                                кухни*</label>
                             <div class="col-sm-5">
                                 <input type="text" class="form-control" id="installationDate">
                             </div>
                         </div>
                         <div class="grup_radio">
 
-                            <ul class="list-unstyled form_result"><strong class="text-uppercase">Выбранная кухня</strong>
+                            <ul class="list-unstyled form_result"><strong class="text-uppercase">Выбранная
+                                    кухня</strong>
                                 <li>Кухня: «Nova (ваниль)»</li>
                                 <li>Верх: «Белый»</li>
                                 <li>Низ: «Белый»</li>

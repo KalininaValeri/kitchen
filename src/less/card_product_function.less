@@ -408,6 +408,11 @@
     }
   }
 
+  .card_application_showcase label::before {
+    width: auto;
+    height: auto;
+  }
+
   .card_application_showcase .color_orange::before {
     content: url("../../img/orange_fasad.png");
   }
@@ -422,6 +427,42 @@
   }
   .card_application_showcase .color_white::before {
     content: url("../../img/white_fasad.png");
+  }
+
+  .card_application_handle {
+    strong {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 99px;
+
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .radio+.radio {
+      margin-top: 15px;
+    }
+
+    #handle .slick-center label {
+      transform: scale(1.3);
+    }
+
+    #handle input[type="radio"]:checked + img {
+      border: 1px solid @main-color;
+    }
+
+    #handle img {
+      display: block;
+      width: 80%;
+    }
+
+    .slider-mod-small .btn-next,
+    .slider-mod-small .btn-prev {
+      height: 99px;
+    }
+
   }
 
   .kitchen_layout > div {
