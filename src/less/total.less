@@ -548,3 +548,36 @@ footer {
   }
 
 }
+
+.about {
+  h3 {
+    color: @main-color;
+    vertical-align: middle;
+
+    strong {
+      vertical-align: middle;
+    }
+  }
+
+  h3::before {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .about_us h3::before {
+    content: url("../../img/icon_about_us.png");
+  }
+
+  .about_konstr h3::before {
+    content: url("../../img/icon_about_konstr.png");
+  }
+
+  .about_assortiment h3::before {
+    content: url("../../img/icon_about_assort.png");
+  }
+
+  .about_service h3::before {
+    content: url("../../img/icon_about_serv.png");
+  }
+}
