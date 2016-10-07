@@ -384,13 +384,16 @@
                             <label for="bottomWhite" class="color_white radio-inline"></label>
                         </div>
                     </div>
-
-
                 </fieldset>
                 <hr>
-                <fieldset class="row">
 
+                <!--декоративные элементы-->
+
+                <fieldset>
                     <div class="row">
+
+                        <!--варианты витрин-->
+
                         <div class="form-group card_application_showcase col-md-7">
                             <span>Вариатны витрин</span>
                             <input type="radio" name="colorShowcase" id="showcaseOrange" value="orange" checked>
@@ -404,22 +407,18 @@
                             <input type="radio" name="colorShowcase" id="showcaseWhite" value="white">
                             <label for="showcaseWhite" class="color_white radio-inline"></label>
                         </div>
-                        <div class="radio_decoration active radio col-md-5">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Наличие декоративных элементов
-                            </label>
+
+                        <div class="radio_decoration active checkbox col-md-5">
+                            <input type="checkbox" name="decorationElements" id="decorationElements" value="option2">
+                            <label for="decorationElements">Наличие декоративных элементов</label>
                         </div>
                     </div>
 
+                    <!--варианты ручек для дверей-->
+
                     <div class="card_application_handle row">
                         <strong class="col-md-2 text-uppercase">Выбор ручек</strong>
-
-
                         <div class="form-group col-md-10">
-
-
-
                             <div class="slider-mod-small">
                                 <button id="handlePrev" type="button" class="btn-prev btn btn-default btn-block">
                                     <i class="material-icons">navigate_before</i>
@@ -519,32 +518,26 @@
                                                 <img src="../../img/handle1.jpg" alt="" width="100">
                                             </label>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
-
-
-
-
-
-
                 </fieldset>
                 <hr>
+
+                <!--планировка кухонного гарнитура-->
+
                 <fielset>
                     <legend>планировка кухонного гарнитура</legend>
+
+                    <!--прямая кухня-->
+
                     <div class="row">
                         <div class="col-md-3">
                             <div class="radio_decoration layout grup_radio radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
-                                           checked>
+                                <input type="radio" name="optionsRadios" id="layoutRectangle" value="option1" checked>
+                                <label for="layoutRectangle">
                                     Прямая
                                     <div class="kitchen_layout">
                                         <div class="kitchen_layout_rectangle">
@@ -555,11 +548,13 @@
                                 </label>
                             </div>
                         </div>
+
+                        <!--треуголная левая кухня-->
+
                         <div class="col-md-3">
                             <div class="radio_decoration layout grup_radio radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
-                                           checked>
+                                <input type="radio" name="optionsRadios" id="layoutTriangular" value="option1" checked>
+                                <label for="layoutTriangular">
                                     Угловая левая
                                     <div class="kitchen_layout">
                                         <div class="kitchen_layout_triangular-left">
@@ -571,11 +566,13 @@
                                 </label>
                             </div>
                         </div>
+
+                        <!--треуголная левая кухня-->
+
                         <div class="col-md-3">
                             <div class="radio_decoration layout grup_radio radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
-                                           checked>
+                                <input type="radio" name="optionsRadios" id="layoutTriangularRight" value="option1" checked>
+                                <label for="layoutTriangularRight">
                                     Угловая правая
                                     <div class="kitchen_layout">
                                         <div class="kitchen_layout_triangular-right">
@@ -587,11 +584,13 @@
                                 </label>
                             </div>
                         </div>
+
+                        <!--П-образная кухня-->
+
                         <div class="col-md-3">
                             <div class="radio_decoration active layout grup_radio radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
-                                           checked>
+                                <input type="radio" name="optionsRadios" id="layoutP" value="option1" checked>
+                                <label for="layoutP">
                                     Угловая правая
                                     <div class="kitchen_layout">
                                         <div>
@@ -606,6 +605,8 @@
                         </div>
                     </div>
 
+                    <!--определение высот и добавить остров-->
+
                     <div class="row">
                         <div class="col-md-4 form-horizontal card_application_group">
                             <div class="form-group">
@@ -615,8 +616,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="heightWardrobe" class="col-sm-7 control-label">Высота навесных
-                                    шкафов</label>
+                                <label for="heightWardrobe" class="col-sm-7 control-label">Высота навесных шкафов</label>
                                 <div class="col-sm-5">
                                     <select class="form-control" id="heightWardrobe">
                                         <option>720 мм</option>
@@ -630,10 +630,8 @@
                         </div>
                         <div class="col-md-6 grup_radio">
                             <div class="radio_decoration checkbox col-md-5 active">
-                                <label>
-                                    <input type="checkbox" name="addIsland" value="">
-                                    Добавить остров
-                                </label>
+                                <input type="checkbox" name="addIsland" id="addIsland" value="">
+                                <label for="addIsland">Добавить остров</label>
                             </div>
                             <div class="col-md-7 form-horizontal">
                                 <div class="form-group">
@@ -658,19 +656,13 @@
                     <strong>У вас в доме обеспечение</strong>
                     <div class="form-inline">
                         <div class="radio_decoration checkbox">
-                            <label>
-                                <input type="radio" name="homeFurnishing" id="inlineRadio1" value="option1">
-                                Электрическое
-                            </label>
+                            <input type="radio" name="homeFurnishing" id="homeFurnishingEl" value="option1">
+                            <label for="homeFurnishingEl">Электрическое</label>
                         </div>
                         <div class="radio_decoration active checkbox">
-                            <label>
-                                <input type="radio" name="homeFurnishing" id="inlineRadio2" value="option2">
-                                Газовое
-                            </label>
+                            <input type="radio" name="homeFurnishing" id="homeFurnishingGaz" value="option2">
+                            <label for="homeFurnishingGaz">Газовое</label>
                         </div>
-
-
                     </div>
                     <div class="row">
                         <div class="col-md-5">
@@ -701,70 +693,56 @@
                             <div class="grup_radio">
                                 <strong>Отдельностоящая техника</strong>
                                 <div class="checkbox radio_decoration active">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueSeparate" value=""> Плита
-                                    </label>
+                                    <input type="checkbox" mame="techniqueSeparate" value="">
+                                    <label>Плита</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueSeparate" value=""> Холодильник
-                                    </label>
+                                    <input type="checkbox" mame="techniqueSeparate" value="">
+                                    <label>Холодильник</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueSeparate" value=""> Посудомоечная машина
-                                    </label>
+                                    <input type="checkbox" mame="techniqueSeparate" value="">
+                                    <label>Посудомоечная машина</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueSeparate" value=""> Стиральная машина
-                                    </label>
+                                    <input type="checkbox" mame="techniqueSeparate" value="">
+                                    <label>Стиральная машина</label>
                                 </div>
 
                                 <strong>Встраиваемая техника</strong>
                                 <div class="checkbox radio_decoration  active">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Варочная поверхность
-                                    </label>
+                                    <input type="checkbox" mame="techniqueEmbedded" value="">
+                                    <label>Варочная поверхность</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Духовой шкаф
-                                    </label>
+                                    <input type="checkbox" mame="techniqueEmbedded" value="">
+                                    <label>Духовой шкаф</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Посудомоечная машина
-                                        60см
-                                    </label>
+                                    <input type="checkbox" mame="techniqueEmbedded" value="">
+                                    <label>Посудомоечная машина 60см</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Посудомоечная машина
-                                        45 см
-                                    </label>
+                                    <input type="checkbox" mame="techniqueEmbedded" value="">
+                                    <label>Посудомоечная машина 45 см</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Холодильник
-                                    </label>
+                                    <input type="checkbox" mame="techniqueEmbedded" value="">
+                                    <label>Холодильник</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="checkbox" mame="techniqueEmbedded" value=""> Стиральная машина
-                                    </label>
+                                    <input type="checkbox" mame="techniqueEmbedded" value="">
+                                    <label>Стиральная машина</label>
                                 </div>
 
                                 <strong>Предпочтительное расположение духового шкафа</strong>
                                 <div class="radio radio_decoration active">
-                                    <label>
-                                        <input type="radio" mame="techniqueEmbedded" value=""> В нижнем шкафу
-                                    </label>
+                                    <input type="radio" mame="techniqueEmbedded" value="">
+                                    <label>В нижнем шкафу</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <label>
-                                        <input type="radio" mame="techniqueEmbedded" value=""> В колонне
-                                    </label>
+                                    <input type="radio" mame="techniqueEmbedded" value="">
+                                    <label>В колонне</label>
                                 </div>
 
                             </div>
@@ -774,14 +752,12 @@
                             <div class="grup_radio">
                                 <strong>Вытяжка</strong>
                                 <div class="radio radio_decoration  active">
-                                    <label>
-                                        <input type="radio" mame="techniqueHood" value=""> Встраиваемая
-                                    </label>
+                                    <input type="radio" mame="techniqueHood" value="">
+                                    <label>Встраиваемая</label>
                                 </div>
                                 <div class="radio radio_decoration">
-                                    <label>
-                                        <input type="radio" mame="techniqueHood" value=""> Купольная
-                                    </label>
+                                    <input type="radio" mame="techniqueHood" value="">
+                                    <label>Купольная</label>
                                 </div>
                             </div>
                         </div>
@@ -792,25 +768,20 @@
                     <legend>Столешница и кухонный фартук</legend>
                     <div class="form-inline">
                         <div class="radio_decoration radio">
-                            <label>
-                                <input type="radio" id="kitchenApron" value="option1"> Плитка
-                            </label>
+                            <input type="radio" id="kitchenApron" value="option1">
+                            <label>Плитка</label>
                         </div>
                         <div class="radio_decoration radio">
-                            <label>
-                                <input type="radio" id="kitchenApron" value="option2"> Стеновая панель
-                            </label>
+                            <input type="radio" id="kitchenApron" value="option2">
+                            <label>Стеновая панель</label>
                         </div>
                         <div class="radio_decoration active radio">
-                            <label>
-                                <input type="radio" id="kitchenApron" value="option3"> Не требуется
-                            </label>
+                            <input type="radio" id="kitchenApron" value="option3">
+                            <label>Не требуется</label>
                         </div>
                         <div class="radio_decoration checkbox">
-                            <label>
-                                <input type="checkbox" id="kitchenApronPrice" value="option3">
-                                <strong>Включать стоимость столешницы в расчет</strong>
-                            </label>
+                            <input type="checkbox" id="kitchenApronPrice" value="option3">
+                            <label><strong>Включать стоимость столешницы в расчет</strong></label>
                         </div>
 
 

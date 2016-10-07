@@ -331,17 +331,19 @@
     border-radius: 50%;
     border: 1px solid #e5e5e5;
     background: white;
+    margin-right: 5px;
   }
 
   .radio_decoration {
-    input [type="checkbox"],
-    input [type="radio"]{
+    input[type="radio"],
+    input[type="checkbox"]{
       display: none;
     }
 
-    input[type=radio]:checked + label::before {
-      content: '';
-      background: @second-color;
+    input[type="radio"]:checked + label::before,
+    input[type="checkbox"]:checked + label::before {
+      content: url("../../img/ic_done_white_16dp_1x.png");
+      border: none;
     }
   }
 
