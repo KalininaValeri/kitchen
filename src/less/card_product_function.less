@@ -304,6 +304,11 @@
     text-transform: uppercase;
   }
 
+  .card_application_color input[type="radio"]:checked + label::before,
+  .card_application_showcase input[type="radio"]:checked + label::before {
+    border: 1px solid @hover-color
+  }
+
   .card_application_color label {
     position: relative;
     padding: 0;
@@ -329,18 +334,18 @@
   }
 
   .radio_decoration {
-    input {
+    input [type="checkbox"],
+    input [type="radio"]{
       display: none;
     }
 
     input[type=radio]:checked + label::before {
       content: '';
       background: @second-color;
-
     }
   }
 
-  .radio_decoration.active {
+  /*.radio_decoration.active {
     label::before {
       content: url("../../img/ic_done_white_16dp_1x.png");
       border: none;
@@ -349,7 +354,7 @@
     label::after {
       
     }
-  }
+  }*/
 
   .grup_radio {
     padding: 25px 0;
@@ -389,13 +394,8 @@
       font-size: 14px;
       font-weight: 500;
     }
-    input[type=radio] {
-      //display: none;
-    }
 
-    input:checked + span {
-      background: #fc0;
-    }
+
 
   }
 
