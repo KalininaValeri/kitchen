@@ -1,0 +1,209 @@
+<% var title = 'Доставка'; %>
+<% include part/begin-html.ejs %>
+<div class="container">
+    <% include part/header.ejs %>
+    <ol class="breadcrumb">
+        <li><a href="./main.html">Классика кухни</a></li>
+        <li class="active">Доставка и сборка</li>
+    </ol>
+    <main class="shepping">
+        <h1 class="text-uppercase">доставка и сборка</h1>
+        <section>
+            <p>
+                Мебель доставляется в разобранном виде в плоских упаковках (малогабаритная мебель в сборе). Сроки
+                доставки
+                товара оговаривается при заключении договора. За день до даты доставки с вами свяжется наш оператор для
+                уточнения деталей. В день доставки, для вашего удобства, водитель максимально точно сориентирует вас по
+                времени прибытия.
+
+            </p>
+            <p>
+                Обязательным условием для бесплатного подъёма товара на этаж является наличие грузового лифта, в иных
+                случаях данная услуга платная. Стоимость услуги можно уточнить у оператора.
+            </p>
+        </section>
+        <section>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a class="btn-block text-uppercase color_orange collapsed" role="button" data-toggle="collapse"
+                           data-parent="#accordion" href="#returnShipping" aria-expanded="true"
+                           aria-controls="collapseOne">
+                            возврат товара
+                        </a>
+                    </div>
+                    <div id="returnShipping" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            Возврат возможен при условии ненадлежащего качества товара на момент подписания акта
+                            приема-передачи. Во всех других случаях возможность возврата товара осуществляется в
+                            индивидуальном порядке, или в соответствии с Законом РФ о Правах потребителей.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a class="btn-block text-uppercase color_orange collapsed" role="button" data-toggle="collapse"
+                           data-parent="#accordion" href="#timeShipping" aria-expanded="true"
+                           aria-controls="collapseOne">
+                            Срок поставки товара
+                        </a>
+                    </div>
+                    <div id="timeShipping" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            Возврат возможен при условии ненадлежащего качества товара на момент подписания акта
+                            приема-передачи. Во всех других случаях возможность возврата товара осуществляется в
+                            индивидуальном порядке, или в соответствии с Законом РФ о Правах потребителей.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a class="btn-block text-uppercase color_orange collapsed" role="button" data-toggle="collapse"
+                           data-parent="#accordion" href="#priceShipping" aria-expanded="true"
+                           aria-controls="collapseOne">
+                            стоимость доставки
+                        </a>
+                    </div>
+                    <div id="priceShipping" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <table width="750" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th width="470">Доставка по москве</th>
+                                    <th>цена, руб.</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>г. Мытищи</td>
+                                    <td>1 200</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва (центр и внутри ТТК)</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Москва (в пределах 10 км. от МКАД, кроме г. Мытищи)
+                                    </td>
+                                    <td>2500</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th width="470">Доставка по московской области</th>
+                                    <th>цена, руб.</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>10-20 км от МКАД</td>
+                                    <td>3 000</td>
+                                </tr>
+                                <tr>
+                                    <td>20-30 км от МКАД</td>
+                                    <td>3 500</td>
+                                </tr>
+                                <tr>
+                                    <td>30-40 км от МКАД</td>
+                                    <td>4 000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <p>Стоимость доставки мебели в другие регионы России можно уточнить у операторов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a class="btn-block text-uppercase color_orange collapsed" role="button" data-toggle="collapse"
+                           data-parent="#accordion" href="#assemblyShipping" aria-expanded="true"
+                           aria-controls="collapseOne">
+                            сборка
+                        </a>
+                    </div>
+                    <div id="assemblyShipping" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>
+                                <strong>Внимание!</strong> Покупатель вправе осуществить сборку мебели своими силами,
+                                но в таких случаях гарантия на монтаж мебели недействительна. Ровно, как и на
+                                повреждения, причиненные в момент самостоятельной сборки.
+                            </p>
+                            <p>
+                                Мы рекомендуем воспользоваться услугами наших профессиональных сборщиков, это поможет
+                                избежать всяческих проблем с дальнейшей эксплуатацией вашей мебели, и сохранит
+                                возможность
+                                гарантийного и сервисного обслуживания. Стоимость сборки варьируется в пределах от 5
+                                до 10% от цены мебели, в зависит от сложности монтажа.
+                            </p>
+                            <p><strong class="color_red">Внимание!</strong> Специалисты по сборке не оказывают услуг по подключению инженерных сетей
+                                (вода, газ, электроприборы). В случае, если сборщики осуществили такого рода услуги по
+                                вашей личной просьбе, гарантия и ответственность на эти работы не распространяется.
+                            </p>
+                            <p class="color_brown"><strong>Перечень и стоимость дополнительных работ при сборке мебели для кухни.</strong></p>
+                            <table width="860" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th width="590">Вид работы</th>
+                                    <th>цена, руб.</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Установка смесителя на мойку (без подключения)</td>
+                                    <td>1 200</td>
+                                </tr>
+                                <tr>
+                                    <td>Установка мойки</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Установка варочной панели без подключения</td>
+                                    <td>2500</td>
+                                </tr>
+                                <tr>
+                                    <td>Установка не встраиваемой стиральной машины (без подключения)</td>
+                                    <td>2500</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>Стоимость доставки мебели в другие регионы России можно уточнить у операторов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a class="btn-block text-uppercase color_orange collapsed" role="button" data-toggle="collapse"
+                           data-parent="#accordion" href="#guaranteeShipping" aria-expanded="true"
+                           aria-controls="collapseOne">
+                            гарантия
+                        </a>
+                    </div>
+                    <div id="guaranteeShipping" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            Возврат возможен при условии ненадлежащего качества товара на момент подписания акта
+                            приема-передачи. Во всех других случаях возможность возврата товара осуществляется в
+                            индивидуальном порядке, или в соответствии с Законом РФ о Правах потребителей.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <% include part/footer.ejs %>
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
