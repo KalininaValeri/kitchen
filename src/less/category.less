@@ -37,15 +37,27 @@
     width: 60px;
     text-align: center;
   }
+
+  .item {
+    margin-bottom: 30px;
+  }
 }
 
 .category_filters {
+  border: 1px solid #dedddd;
+
   legend {
+    margin: 0;
     text-transform: none;
   }
 
   fieldset {
-    padding-bottom: 20px;
+    padding: 20px 0;
+  }
+
+  .category_filters_fasad,
+  .category_filters_checkbox {
+    background: #f2f2f2;
   }
 
   .category_filters_price {
@@ -53,12 +65,16 @@
   }
 
   .category_filters_price_range {
-    margin-top: 65px;
-    width: 100%;
+    margin: 65px 10% 0;
+    width: 80%;
     height: 10px;
     background: #f2f2f2;
     line-height: 0;
     font-size: 0;
+  }
+
+  .category_filters_price_min {
+    margin: 0 10%;
   }
 
   .category_filters_price_range div {
@@ -77,14 +93,14 @@
     width: 20px;
     border-radius: 50%;
     position: absolute;
-    top: 104px;
-    left: 210px;
+    top: 109px;
+    left: 280px;
     background: @second-color;
     border: none;
   }
 
   .category_filters_drag.right {
-    left: 373px;
+    left: 407px;
   }
 }
 
