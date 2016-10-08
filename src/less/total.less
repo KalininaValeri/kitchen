@@ -954,3 +954,50 @@ footer {
  #assemblyShipping .table {
    width: 860px;
  }
+
+ .reviews {
+   .reviews_content {
+     border: 1px solid #e5e5e5;
+     padding: 20px 30px 50px;
+     color: @third-color;
+     position: relative;
+
+     .reviews_content_text {
+       height: 64px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+     }
+
+     .reviews_content_deployer {
+       width: 90px;
+       position: absolute;
+       bottom: 22px;
+       left: 30px;
+     }
+
+     .reviews_content_collapser {
+       display: none;
+     }
+   }
+
+   .reviews_content.active {
+     padding-bottom: 20px;
+
+     .reviews_content_text {
+       height: auto;
+     }
+
+     .reviews_content_deployer {
+       display: none;
+     }
+
+     .reviews_content_collapser {
+       display: block;
+     }
+   }
+
+   .reviews_content_collapser,
+   .reviews_content_deployer {
+     cursor: pointer;
+   }
+ }
