@@ -1,0 +1,120 @@
+<% var title = 'Корзина'; %>
+<% include part/begin-html.ejs %>
+<div class="container">
+    <% include part/header.ejs %>
+    <ol class="breadcrumb">
+        <li><a href="./main.html">Классика кухни</a></li>
+        <li class="active">Корзина</li>
+    </ol>
+    <main  class="page_basket">
+        <h1 class="text-uppercase"><strong>спасибо за заказ!</strong></h1>
+        <table class="table table-bordered page_basket_order">
+            <thead class="text-uppercase text-center">
+            <tr>
+                <th class="text-center">
+                    Номер вашего заказа
+                    <div class="color_brown">74382</div>
+                </th>
+                <th class="color_brown text-center page_basket_order_caption">
+                    ваш заказ
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="page_basket_order_title color_red text-uppercase text-center">
+                        <strong>ваш заказ успешно принят к обработке</strong>
+                    </div>
+
+                    <div class="page_basket_order_list text-uppercase">
+                        <strong>Контактные данные</strong>
+                    </div>
+
+                    <hr>
+
+                    <dl>
+                        <dt class="text-left">ФИО:</dt>
+                        <dd>Уланов Николай Васильевич</dd>
+                        <br>
+                        <dt class="text-left">Email:</dt>
+                        <dd>ulanov@gmail.com</dd>
+                        <br>
+                        <dt class="text-left">Телефон:</dt>
+                        <dd>8-598-345-21-10</dd>
+                    </dl>
+
+                    <div class="text-uppercase">
+                        <strong>способы оплаты</strong>
+                    </div>
+
+                    <hr>
+
+                    <dl>
+                        <dt>Тип оплаты:</dt>
+                        <dd>Наличными</dd>
+                    </dl>
+
+                </td>
+                <td rowspan="2" class="page_basket_order_caption">
+                    <div id="wrapper">
+                        <div class="clearfix">
+                            <figure class="item pull-left">
+                                <img src="../../img/kitchen_basket.png" alt="">
+                            </figure>
+                            <ul class="list-unstyled text-uppercase">
+                                <li><strong>Куба белая</strong></li>
+                                <li><strong>1шт</strong></li>
+                                <li class="color_red"><strong>183000руб</strong></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix">
+                            <figure class="item pull-left">
+                                <img src="../../img/kitchen_basket.png" alt="">
+                            </figure>
+                            <ul class="list-unstyled text-uppercase">
+                                <li><strong>Куба белая</strong></li>
+                                <li><strong>1шт</strong></li>
+                                <li class="color_red"><strong>183000руб</strong></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix">
+                            <figure class="item pull-left">
+                                <img src="../../img/kitchen_basket.png" alt="">
+                            </figure>
+                            <ul class="list-unstyled text-uppercase">
+                                <li><strong>Куба белая</strong></li>
+                                <li><strong>1шт</strong></li>
+                                <li class="color_red"><strong>183000руб</strong></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix">
+                            <figure class="item pull-left">
+                                <img src="../../img/kitchen_basket.png" alt="">
+                            </figure>
+                            <ul class="list-unstyled text-uppercase">
+                                <li><strong>Куба белая</strong></li>
+                                <li><strong>1шт</strong></li>
+                                <li class="color_red"><strong>183000руб</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td class="page_basket_order_purchase">
+                    <a href="#" class=" color_orange btn btn-block text-uppercase">продолжить покупки</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+    <% include part/footer.ejs %>
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
