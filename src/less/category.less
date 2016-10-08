@@ -3,7 +3,7 @@
   .category_opshions_links {
     display: block;
     height: 70px;
-    border:  1px solid @second-color;
+    border: 1px solid @second-color;
     border-radius: 3px;
     color: @main-color;
     text-decoration: none;
@@ -25,7 +25,7 @@
     width: 96%;
   }
 
-  .category_opshions_links  div::before {
+  .category_opshions_links div::before {
     content: '';
     width: 0;
     height: 100%;
@@ -36,5 +36,136 @@
   .img-wrap {
     width: 60px;
     text-align: center;
+  }
+}
+
+.category_filters {
+  legend {
+    text-transform: none;
+  }
+
+  fieldset {
+    padding-bottom: 20px;
+  }
+
+  .category_filters_price {
+    position: relative;
+  }
+
+  .category_filters_price_range {
+    margin-top: 65px;
+    width: 100%;
+    height: 10px;
+    background: #f2f2f2;
+    line-height: 0;
+    font-size: 0;
+  }
+
+  .category_filters_price_range div {
+    display: inline-block;
+    width: 11.11%;
+    height: 100%;
+    border-left: 3px solid #dedddd;
+  }
+
+  .category_filters_price_range :first-child {
+    border: none;
+  }
+
+  .category_filters_drag {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 104px;
+    left: 210px;
+    background: @second-color;
+    border: none;
+  }
+
+  .category_filters_drag.right {
+    left: 373px;
+  }
+}
+
+.popover.top {
+  background: @second-color;
+  border: none;
+  color: white;
+}
+
+.popover.top > .arrow:after {
+  border-top-color: @second-color;
+}
+
+.category_filters_fasad {
+
+  .radio_decoration {
+    margin: 0 20px;
+  }
+}
+
+.category_filters_checkbox {
+  .category_filters_checkbox_style {
+    display: inline-block;
+    width: 320px;
+    border: 1px solid #9d9d9c;
+    margin: 0 10px;
+    //padding: 10px;
+  }
+
+  .category_filters_checkbox_style_item {
+    position: relative;
+    padding: 15px;
+    ul {
+      border: 1px solid #9d9d9c;
+      background: white;
+      position: absolute;
+      z-index: 100;
+      left: -1px;
+      right: -1px;
+      top: 50px;
+      display: none;
+    }
+  }
+
+  .category_filters_checkbox_style_item.active {
+    ul {
+      display: block;
+
+    }
+  }
+
+  .category_filters_checkbox_style_item-color {
+    .radio_decoration {
+      position: relative;
+    }
+
+    label div{
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+    }
+
+    .color_orange div {
+      background: #dc7d45;
+    }
+
+    .color_brown div {
+      background: #403833;
+    }
+
+    .color_green div {
+      background: #b6da9c;
+    }
+
+    .color_milk div {
+      background: #faf5e1;
+    }
+
+    .color_white div {
+      background: #f8f8f8;
+    }
+
   }
 }
