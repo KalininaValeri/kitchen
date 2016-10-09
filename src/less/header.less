@@ -226,6 +226,7 @@ nav.navbar-default {
       line-height: 24px;
       text-decoration: none;
       padding: 10px;
+      text-transform: uppercase;
     }
 
     .nav_dropdown {
@@ -240,6 +241,10 @@ nav.navbar-default {
         padding: 0;
         line-height: 24px;
         font-weight: 400;
+      }
+
+      a.text-uppercase {
+        text-transform: uppercase;
       }
 
       li:hover {
@@ -259,6 +264,7 @@ nav.navbar-default {
   .navigation_buyer {
     li {
       display: block;
+      width: 260px;
     }
     a {
       color: @main-color;
@@ -289,7 +295,6 @@ nav.navbar-default {
     height: auto;
 
     li {
-      display: inline-block;
       width: auto;
       height: auto;
 
@@ -298,6 +303,17 @@ nav.navbar-default {
         //background: red;
         padding: 10px 22px;
       }
+    }
+  }
+
+  .navigation_buyer.navbar-right {
+    li {
+      width: auto;
+    }
+
+    i {
+      padding-right: 0;
+      padding-left: 10px;
     }
   }
 
