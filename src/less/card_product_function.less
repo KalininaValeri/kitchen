@@ -358,6 +358,7 @@
 
   .grup_radio.layout {
     height: 175px;
+    padding: 25px 15px;
   }
 
   .card_application_group {
@@ -511,11 +512,10 @@
     left: 65px;
   }
 
-  .radio_decoration.active .kitchen_layout .col-1,
-  .radio_decoration.active .kitchen_layout > div::after,
-  .radio_decoration.active .kitchen_layout > div::before {
+  input[type="radio"]:checked + label .kitchen_layout .col-1,
+  input[type="radio"]:checked + label .kitchen_layout > div::after,
+  input[type="radio"]:checked + label .kitchen_layout > div::before {
     background: @second-color;
-
   }
 
   .square_location {

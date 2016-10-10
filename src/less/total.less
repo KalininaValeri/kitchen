@@ -158,6 +158,10 @@ hr.beautiful::after {
   width: 100%;
 }
 
+.form-inline .checkbox label, .form-inline .radio label {
+  padding-left: 25px;
+}
+
 form {
   legend {
     border: none;
@@ -171,15 +175,24 @@ form {
     position: relative;
   }
 
-  .radio_decoration label::before {
+  .radio_decoration label {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+
+  .radio_decoration label:before {
     content: '';
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     border: 2px solid #9d9d9c;
-    background: white;
-    margin-right: 5px;
+    margin-right: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .radio_decoration {
@@ -188,8 +201,13 @@ form {
       display: none;
     }
 
-    input[type="radio"]:checked + label::before,
-    input[type="checkbox"]:checked + label::before {
+    input[type="radio"]:checked + label:before {
+      content: url("../../img/icon_radio_checked.png");
+      text-align: center;
+      border: none;
+    }
+
+    input[type="checkbox"]:checked + label:before {
       content: url("../../img/ic_done_white_16dp_1x.png");
       border: none;
     }
