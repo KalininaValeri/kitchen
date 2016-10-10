@@ -975,6 +975,15 @@ footer {
  }
 
  .reviews {
+   position: relative;
+
+   .btn-orange {
+     padding: 10px 20px;
+     position: absolute;
+     top: -16px;
+     right: 0;
+   }
+
    .reviews_content {
      border: 1px solid #e5e5e5;
      padding: 20px 30px 50px;
@@ -987,6 +996,16 @@ footer {
        text-overflow: ellipsis;
      }
 
+     .reviews_content_text_img {
+       margin-top: 35px;
+       img {
+         width: 184px;
+         margin-right: 25px;
+         margin-bottom: 15px;
+       }
+
+     }
+
      .reviews_content_deployer {
        width: 90px;
        position: absolute;
@@ -995,7 +1014,14 @@ footer {
      }
 
      .reviews_content_collapser {
+       color: @third-color;
+       vertical-align: middle;
+       text-align: right;
        display: none;
+
+       i {
+         vertical-align: middle;
+       }
      }
    }
 
@@ -1003,7 +1029,7 @@ footer {
      padding-bottom: 20px;
 
      .reviews_content_text {
-       height: auto;
+       //height: auto;
      }
 
      .reviews_content_deployer {
