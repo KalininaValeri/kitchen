@@ -158,7 +158,7 @@
             <ul class="nav nav-pills" role="tablist">
                 <li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab"
                                                           data-toggle="tab">описание</a></li>
-                <li role="presentation"><a href="#settings" aria-controls="profile" role="tab" data-toggle="tab">параметры</a>
+                <li role="presentation"><a id="productsSettings" href="#settings" aria-controls="profile" role="tab" data-toggle="tab">параметры</a>
                 </li>
                 <li role="presentation"><a href="#shipping" aria-controls="messages" role="tab" data-toggle="tab">доставка
                         и оплата</a></li>
@@ -176,7 +176,6 @@
                         от ведущих европейских производителей фурнитуры.
                     </p>
                 </article>
-
                 <article role="tabpanel" class="tab-pane" id="settings">
                     <div class="row">
                         <div class="color_brown col-md-2 slider-title">Фасад</div>
@@ -745,56 +744,56 @@
                             <div class="grup_radio">
                                 <strong>Отдельностоящая техника</strong>
                                 <div class="checkbox radio_decoration active">
-                                    <input type="checkbox" mame="techniqueSeparate" value="">
-                                    <label>Плита</label>
+                                    <input id="techniqueSeparate1" type="checkbox" name="techniqueSeparate" value="">
+                                    <label for="techniqueSeparate1">Плита</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueSeparate" value="">
-                                    <label>Холодильник</label>
+                                    <input id="techniqueSeparate2" type="checkbox" name="techniqueSeparate" value="">
+                                    <label for="techniqueSeparate2">Холодильник</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueSeparate" value="">
-                                    <label>Посудомоечная машина</label>
+                                    <input id="techniqueSeparate3" type="checkbox" name="techniqueSeparate" value="">
+                                    <label for="techniqueSeparate3">Посудомоечная машина</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueSeparate" value="">
-                                    <label>Стиральная машина</label>
+                                    <input id="techniqueSeparate4" type="checkbox" name="techniqueSeparate" value="">
+                                    <label for="techniqueSeparate4">Стиральная машина</label>
                                 </div>
 
                                 <strong>Встраиваемая техника</strong>
                                 <div class="checkbox radio_decoration  active">
-                                    <input type="checkbox" mame="techniqueEmbedded" value="">
-                                    <label>Варочная поверхность</label>
+                                    <input id="techniqueEmbedded1" type="checkbox" name="techniqueEmbedded" value="">
+                                    <label for="techniqueEmbedded1">Варочная поверхность</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueEmbedded" value="">
-                                    <label>Духовой шкаф</label>
+                                    <input id="techniqueEmbedded2" type="checkbox" name="techniqueEmbedded" value="">
+                                    <label for="techniqueEmbedded2">Духовой шкаф</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueEmbedded" value="">
-                                    <label>Посудомоечная машина 60см</label>
+                                    <input id="techniqueEmbedded3" type="checkbox" name="techniqueEmbedded" value="">
+                                    <label for="techniqueEmbedded3">Посудомоечная машина 60см</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueEmbedded" value="">
-                                    <label>Посудомоечная машина 45 см</label>
+                                    <input id="techniqueEmbedded4" type="checkbox" name="techniqueEmbedded" value="">
+                                    <label for="techniqueEmbedded4">Посудомоечная машина 45 см</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueEmbedded" value="">
-                                    <label>Холодильник</label>
+                                    <input id="techniqueEmbedded5" type="checkbox" name="techniqueEmbedded" value="">
+                                    <label for="techniqueEmbedded5">Холодильник</label>
                                 </div>
                                 <div class="checkbox radio_decoration">
-                                    <input type="checkbox" mame="techniqueEmbedded" value="">
-                                    <label>Стиральная машина</label>
+                                    <input id="techniqueEmbedded6" type="checkbox" name="techniqueEmbedded" value="">
+                                    <label for="techniqueEmbedded6">Стиральная машина</label>
                                 </div>
 
                                 <strong>Предпочтительное расположение духового шкафа</strong>
-                                <div class="radio radio_decoration active">
-                                    <input type="radio" mame="techniqueEmbedded" value="">
-                                    <label>В нижнем шкафу</label>
+                                <div class="radio radio_decoration">
+                                    <input id="techniqueOven1" type="radio" name="techniqueOven" value="">
+                                    <label for="techniqueOven1">В нижнем шкафу</label>
                                 </div>
-                                <div class="checkbox radio_decoration">
-                                    <input type="radio" mame="techniqueEmbedded" value="">
-                                    <label>В колонне</label>
+                                <div class="radio radio_decoration">
+                                    <input id="techniqueOven2" type="radio" name="techniqueOven" value="">
+                                    <label for="techniqueOven2">В колонне</label>
                                 </div>
 
                             </div>
@@ -804,12 +803,12 @@
                             <div class="grup_radio">
                                 <strong>Вытяжка</strong>
                                 <div class="radio radio_decoration  active">
-                                    <input type="radio" mame="techniqueHood" value="">
-                                    <label>Встраиваемая</label>
+                                    <input id="techniqueHood1" type="radio" name="techniqueHood" value="o1">
+                                    <label for="techniqueHood1">Встраиваемая</label>
                                 </div>
                                 <div class="radio radio_decoration">
-                                    <input type="radio" mame="techniqueHood" value="">
-                                    <label>Купольная</label>
+                                    <input id="techniqueHood2" type="radio" name="techniqueHood" value="o2">
+                                    <label for="techniqueHood2">Купольная</label>
                                 </div>
                             </div>
                         </div>
@@ -820,20 +819,20 @@
                     <legend>Столешница и кухонный фартук</legend>
                     <div class="form-inline">
                         <div class="radio_decoration radio">
-                            <input type="radio" id="kitchenApron" value="option1">
-                            <label>Плитка</label>
+                            <input type="radio" id="kitchenApron1" name="kitchenApron" value="option1">
+                            <label for="kitchenApron1">Плитка</label>
                         </div>
                         <div class="radio_decoration radio">
-                            <input type="radio" id="kitchenApron" value="option2">
-                            <label>Стеновая панель</label>
+                            <input type="radio" id="kitchenApron2" name="kitchenApron" value="option2">
+                            <label for="kitchenApron2">Стеновая панель</label>
                         </div>
-                        <div class="radio_decoration active radio">
-                            <input type="radio" id="kitchenApron" value="option3">
-                            <label>Не требуется</label>
+                        <div class="radio_decoration radio">
+                            <input type="radio" id="kitchenApron3" name="kitchenApron" value="option3">
+                            <label for="kitchenApron3">Не требуется</label>
                         </div>
                         <div class="radio_decoration checkbox">
                             <input type="checkbox" id="kitchenApronPrice" value="option3">
-                            <label><strong>Включать стоимость столешницы в расчет</strong></label>
+                            <label for="kitchenApronPrice"><strong>Включать стоимость столешницы в расчет</strong></label>
                         </div>
 
 
