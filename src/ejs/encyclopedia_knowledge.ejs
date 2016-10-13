@@ -24,53 +24,21 @@
         <section class="encyclopedia_section">
             <article class="gallery row">
                 <div class="col-xs-4 col-xs-offset-2">
-                    <div class="item">
-                        <a class="gallery_bank" href="#">
-                            <div class="item_description">банк проектов <br>
-                                3D
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
+                    <% include part/gallery_kitchen.ejs %>
                 </div>
                 <div class="col-xs-4">
-                    <div class="item">
-                        <a class="gallery_video" href="#">
-                            <div class="item_description">Видео-зал <br>
-                                Доступно и обо всем
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
+                    <% include part/gallery_video.ejs %>
                 </div>
             </article>
             <article class="gallery row">
                 <div class="col-xs-4 col-xs-offset-2">
-                    <div class="item">
-                        <a class="gallery_article" href="#">
-                            <div class="item_description">полезные <br>
-                                статьи
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
+                    <% include part/gallery_article.ejs %>
                 </div>
                 <div class="col-xs-4">
-                    <div class="item">
-                        <a class="gallery_photo" href="#">
-                            <div class="item_description">фотогалерея <br>
-                                реализованных проектов
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
+                    <% include part/gallery_photo.ejs %>
                 </div>
             </article>
-
-
         </section>
-
-
     </main>
     <% include part/footer.ejs %>
 </div>
