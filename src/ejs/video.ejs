@@ -1,0 +1,85 @@
+<% var title = 'Видео-зал'; %>
+<% include part/begin-html.ejs %>
+
+<div class="container">
+    <% include part/header.ejs %>
+    <% include part/banner.ejs %>
+    <ol class="breadcrumb">
+        <li><a href="./main.html">Классика кухни</a></li>
+        <li><a href="./encyclopedia_knowledge.html">Энциклопедия знаний</a></li>
+        <li class="active">Видео-зал</li>
+    </ol>
+
+    <section class="attention clearfix">
+            <span class="attention_content">
+                ШАБЛОННЫЙ ТЕКСТ Герои этих произведений, объединенных общим сюжетом, – мальчишки с храбрыми сердцами и
+                взрослые, не утратившие мальчишеской храбрости, озорства и веры в сказку. Сквозь странный сон, сквозь
+                пространство и время, главный герой возвращается в детство, переживает то, что было и то, что только могло
+                быть… Там, в снах, в другом мире – Валерка и Братик, и барабанщики… В реальности – приятель Володька…
+                И как разорваться герою? Но прошлое и настоящее рождают новое будущее. Не веревочка свяжет планеты,
+                а дружба мальчишек…
+            </span>
+    </section>
+
+    <h1>Видео-зал</h1>
+
+    <div class="row">
+        <aside class="category_filters_checkbox mod-aside col-xs-3">
+            <form action="">
+                <ul class="category_filters_checkbox_style list-unstyled text-left">
+                    <li class="category_filters_checkbox_style_item">
+                        <strong class="color_brown">Стиль</strong>
+                        <i class="material-icons deployer">&#xE313;</i>
+                        <i class="material-icons collapser">&#xE316;</i>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Классика</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style2" value="option1">
+                                    <label for="style2">Модерн</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style3" value="option1">
+                                    <label for="style3">Кантри</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style4" value="option1">
+                                    <label for="style4">Ретро</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style5" value="option1">
+                                    <label for="style5">Хай-тек</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style6" value="option1">
+                                    <label for="style6">Минимализм</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </form>
+
+        </aside>
+
+    </div>
+    <% include part/footer.ejs %>
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
