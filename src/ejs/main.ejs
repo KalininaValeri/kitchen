@@ -70,54 +70,12 @@
                 <hr>
                 <div class="clearfix"></div>
                 <div id="designer">
-                    <div class="item">
-                        <a class="gallery_kitchen" href="#">
-                            <div class="item_description">3D конструктор <br>
-                                кухни
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_wardrobe" href="#">
-                            <div class="item_description">3D конструктор <br>
-                                шкафов
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_bank" href="#">
-                            <div class="item_description">банк проектов <br>
-                                3D
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_kitchen" href="#">
-                            <div class="item_description">3D конструктор <br>
-                                кухни
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_wardrobe" href="#">
-                            <div class="item_description">3D конструктор <br>
-                                шкафов
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_bank" href="#">
-                            <div class="item_description">банк проектов <br>
-                                3D
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
+                    <% include part/gallery_kitchen.ejs %>
+                    <% include part/gallery_wardrobe.ejs %>
+                    <% include part/gallery_bank.ejs %>
+                    <% include part/gallery_kitchen.ejs %>
+                    <% include part/gallery_wardrobe.ejs %>
+                    <% include part/gallery_bank.ejs %>
                 </div>
             </article>
             <article class="gallery">
@@ -128,36 +86,14 @@
                 </div>
 
                 <h2 class="">
-                    конструктор 3D онлайн
+                    ЭНЦИКЛОПЕДИЯ ЗНАНИЙ
                 </h2>
                 <hr>
                 <div class="clearfix"></div>
                 <div id="encyclopedia">
-                    <div class="item">
-                        <a class="gallery_article" href="#">
-                            <div class="item_description">полезные <br>
-                                статьи
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_video" href="#">
-                            <div class="item_description">Видео-зал <br>
-                                Доступно и обо всем
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="gallery_photo" href="#">
-                            <div class="item_description">фотогалерея <br>
-                                реализованных проектов
-                            </div>
-                            <div class="item_frame"></div>
-                        </a>
-                    </div>
-
+                    <% include part/gallery_article.ejs %>
+                    <% include part/gallery_video.ejs %>
+                    <% include part/gallery_photo.ejs %>
                 </div>
             </article>
         </section>
