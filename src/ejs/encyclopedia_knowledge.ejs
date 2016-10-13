@@ -1,0 +1,79 @@
+<% var title = 'Энциклопедия знаний'; %>
+<% include part/begin-html.ejs %>
+
+<div class="container">
+    <% include part/header.ejs %>
+    <ol class="breadcrumb">
+        <li><a href="./main.html">Классика кухни</a></li>
+        <li class="active">Энциклопедия знаний</li>
+    </ol>
+
+    <main class="encyclopedia">
+        <section class="attention clearfix">
+            <span class="attention_content">
+                ШАБЛОННЫЙ ТЕКСТ Герои этих произведений, объединенных общим сюжетом, – мальчишки с храбрыми сердцами и
+                взрослые, не утратившие мальчишеской храбрости, озорства и веры в сказку. Сквозь странный сон, сквозь
+                пространство и время, главный герой возвращается в детство, переживает то, что было и то, что только могло
+                быть… Там, в снах, в другом мире – Валерка и Братик, и барабанщики… В реальности – приятель Володька…
+                И как разорваться герою? Но прошлое и настоящее рождают новое будущее. Не веревочка свяжет планеты,
+                а дружба мальчишек…
+            </span>
+        </section>
+
+        <h1>Энциклопедия знаний</h1>
+        <section class="encyclopedia_section">
+            <article class="gallery row">
+                <div class="col-xs-4 col-xs-offset-2">
+                    <div class="item">
+                        <a class="gallery_bank" href="#">
+                            <div class="item_description">банк проектов <br>
+                                3D
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="item">
+                        <a class="gallery_video" href="#">
+                            <div class="item_description">Видео-зал <br>
+                                Доступно и обо всем
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="gallery row">
+                <div class="col-xs-4 col-xs-offset-2">
+                    <div class="item">
+                        <a class="gallery_article" href="#">
+                            <div class="item_description">полезные <br>
+                                статьи
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="item">
+                        <a class="gallery_photo" href="#">
+                            <div class="item_description">фотогалерея <br>
+                                реализованных проектов
+                            </div>
+                            <div class="item_frame"></div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+
+
+    </main>
+    <% include part/footer.ejs %>
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
