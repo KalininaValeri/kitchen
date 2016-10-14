@@ -179,7 +179,7 @@
     }
   }
 
-  .category_filters_checkbox_style_item.active {
+  .category_filters_checkbox_style.active {
     i.collapser {
       display: block;
     }
@@ -188,7 +188,7 @@
       display: none;
     }
 
-    ul {
+    .category_filters_checkbox_style_item > ul {
       display: block;
     }
   }
@@ -227,6 +227,32 @@
   }
 }
 
-.category_filters_checkbox.mod-aside .category_filters_checkbox_style_item ul {
-  position: relative;
+.category_filters_checkbox.mod-aside {
+  .category_filters_checkbox_style {
+    width: 100%;
+    margin: 0;
+    display: block;
+    border-bottom: none;
+  }
+
+  .category_filters_checkbox_list {
+    display: none;
+    width: 100%;
+    max-height: 215px;
+    overflow-y: scroll;
+    margin: 0;
+    border-top: 1px solid grey;
+    padding: 15px;
+  }
+
+  .category_filters_checkbox_style.active {
+    .category_filters_checkbox_list {
+      display: block;
+
+    }
+  }
+}
+
+.category_filters_checkbox.mod-aside:last-child {
+  border-bottom: 1px solid grey;
 }

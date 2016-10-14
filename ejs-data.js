@@ -3,7 +3,21 @@ module.exports = function () {
         menu: [
             {
                 title: '111',
-                url: 'https://ya.ru'
+                url: 'https://ya.ru',
+                submenu: [
+                    {
+                        title: 'кухня эконом2',
+                        url: 'wwww'
+                    },
+                    {
+                        title: 'кухня эконом1',
+                        url: 'wwww'
+                    },
+                    {
+                        title: 'кухня эконом3',
+                        url: 'wwww'
+                    }
+                ]
             },
             {
                 title: '222',
