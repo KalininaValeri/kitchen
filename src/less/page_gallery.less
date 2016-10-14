@@ -19,6 +19,10 @@
     width: 100%;
   }
 
+  img {
+    width: 100%;
+  }
+
   button {
     border: 1px solid @second-color;
     padding: 10px 0;
@@ -40,6 +44,28 @@
 
   button:active {
     outline: none;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+
+    .page_gallery_section_content {
+      color: @main-color;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 5px 0;
+      font-weight: 600;
+    }
+
+  }
+
+  a:hover {
+
+    .page_gallery_section_content,
+    img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
   }
 }
 
