@@ -1,0 +1,452 @@
+<% var title = 'Видео-зал'; %>
+<% include part/begin-html.ejs %>
+
+<div class="page_gallery container">
+    <% include part/header.ejs %>
+    <% include part/banner.ejs %>
+
+    <ol class="breadcrumb">
+        <li><a href="./main.html">Классика кухни</a></li>
+        <li><a href="./encyclopedia_knowledge.html">Энциклопедия знаний</a></li>
+        <li class="active">Видео-зал</li>
+    </ol>
+
+    <section class="attention clearfix">
+            <span class="attention_content">
+                ШАБЛОННЫЙ ТЕКСТ Герои этих произведений, объединенных общим сюжетом, – мальчишки с храбрыми сердцами и
+                взрослые, не утратившие мальчишеской храбрости, озорства и веры в сказку. Сквозь странный сон, сквозь
+                пространство и время, главный герой возвращается в детство, переживает то, что было и то, что только могло
+                быть… Там, в снах, в другом мире – Валерка и Братик, и барабанщики… В реальности – приятель Володька…
+                И как разорваться герою? Но прошлое и настоящее рождают новое будущее. Не веревочка свяжет планеты,
+                а дружба мальчишек…
+            </span>
+    </section>
+
+    <h1>Видео-зал</h1>
+
+    <div class="row">
+        <aside class="col-xs-3">
+            <form action="">
+                <div class="category_filters_checkbox mod-aside text-left">
+                    <div class="category_filters_checkbox_style list-unstyled">
+                        <div class="category_filters_checkbox_style_item">
+                            <strong class="color_brown">Фурнитура</strong>
+                            <i class="material-icons deployer">&#xE313;</i>
+                            <i class="material-icons collapser">&#xE316;</i>
+                        </div>
+                        <ul class="category_filters_checkbox_list list-unstyled text-left">
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Освещение</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Подъемники</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style2" value="option1">
+                                    <label for="style2">Х</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style3" value="option1">
+                                    <label for="style3">Х</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style4" value="option1">
+                                    <label for="style4">Х</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style5" value="option1">
+                                    <label for="style5">Х</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style6" value="option1">
+                                    <label for="style6">Х</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category_filters_checkbox mod-aside text-left">
+                    <div class="category_filters_checkbox_style list-unstyled">
+                        <div class="category_filters_checkbox_style_item">
+                            <strong class="color_brown">Фасады</strong>
+                            <i class="material-icons deployer">&#xE313;</i>
+                            <i class="material-icons collapser">&#xE316;</i>
+                        </div>
+                        <ul class="category_filters_checkbox_list list-unstyled text-left">
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Классика</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style2" value="option1">
+                                    <label for="style2">Модерн</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style3" value="option1">
+                                    <label for="style3">Кантри</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style4" value="option1">
+                                    <label for="style4">Ретро</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style5" value="option1">
+                                    <label for="style5">Хай-тек</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category_filters_checkbox mod-aside text-left">
+                    <div class="category_filters_checkbox_style list-unstyled">
+                        <div class="category_filters_checkbox_style_item">
+                            <strong class="color_brown">Столешницы</strong>
+                            <i class="material-icons deployer">&#xE313;</i>
+                            <i class="material-icons collapser">&#xE316;</i>
+                        </div>
+                        <ul class="category_filters_checkbox_list list-unstyled text-left">
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Классика</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style2" value="option1">
+                                    <label for="style2">Модерн</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style3" value="option1">
+                                    <label for="style3">Кантри</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style4" value="option1">
+                                    <label for="style4">Ретро</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category_filters_checkbox mod-aside text-left">
+                    <div class="category_filters_checkbox_style list-unstyled">
+                        <div class="category_filters_checkbox_style_item">
+                            <strong class="color_brown">Производство</strong>
+                            <i class="material-icons deployer">&#xE313;</i>
+                            <i class="material-icons collapser">&#xE316;</i>
+                        </div>
+                        <ul class="category_filters_checkbox_list list-unstyled text-left">
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Классика</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style2" value="option1">
+                                    <label for="style2">Модерн</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style3" value="option1">
+                                    <label for="style3">Кантри</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style4" value="option1">
+                                    <label for="style4">Ретро</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style5" value="option1">
+                                    <label for="style5">Хай-тек</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category_filters_checkbox mod-aside text-left">
+                    <div class="category_filters_checkbox_style list-unstyled">
+                        <div class="category_filters_checkbox_style_item">
+                            <strong class="color_brown">Обзоры</strong>
+                            <i class="material-icons deployer">&#xE313;</i>
+                            <i class="material-icons collapser">&#xE316;</i>
+                        </div>
+                        <ul class="category_filters_checkbox_list list-unstyled text-left">
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style1" value="option1">
+                                    <label for="style1">Классика</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style2" value="option1">
+                                    <label for="style2">Модерн</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style3" value="option1">
+                                    <label for="style3">Кантри</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style4" value="option1">
+                                    <label for="style4">Ретро</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio_decoration checkbox">
+                                    <input type="checkbox" name="homeFurnishing" id="style5" value="option1">
+                                    <label for="style5">Хай-тек</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </aside>
+
+        <main class="col-xs-9">
+            <section class="page_gallery_section">
+                <h3 class="color_brown">Столешницы</h3>
+                <hr class="hr_orange">
+                <div class="row">
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster1.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster2.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster3.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                </div>
+                <hr>
+                <div class="row">
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster1.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster2.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster3.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                </div>
+                <button class="btn btn-default btn-block" type="button">Показать еще</button>
+            </section>
+            <section class="page_gallery_section">
+                <h3 class="color_brown">Фурнитура</h3>
+                <hr class="hr_orange">
+                <div class="row">
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster1.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster2.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster3.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                </div>
+                <hr>
+                <div class="row">
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster1.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster2.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                    <article class="col-xs-4">
+                        <video controls poster="../../img/poster3.png" preload="none">
+                            <source src="http://media.html5book.ru/martynko.mp4" type="video/mp4">
+                            <source src="http://media.html5book.ru/martynko.webm" type="video/webm">
+                            <source src="http://media.html5book.ru/martynko.ogv" type="video/ogg">
+                        </video>
+                        <div class="page_gallery_section_content">
+                            <time>43:15</time>
+                            <div class="page_gallery_section_content_description">
+                                Новый дом Рамзана Кадырова (Как Реально Живет Рамзан Кадыров)
+                                ВСЁ САМОЕ САМОЕ СМЕШНОЕ
+                            </div>
+                            <span>452 172</span> просмотра <span>4</span> месяца назад
+                        </div>
+                    </article>
+                </div>
+                <button class="btn btn-default btn-block" type="button">Показать еще</button>
+            </section>
+        </main>
+
+    </div>
+    <% include part/footer.ejs %>
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
