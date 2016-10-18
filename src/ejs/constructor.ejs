@@ -1,0 +1,53 @@
+<% var title = 'Конструктор'; %>
+<% include part/begin-html.ejs %>
+
+<div class="category container">
+    <% include part/header.ejs %>
+    <% include part/banner.ejs %>
+    <section class="category_opshions row">
+        <div class="col-xs-3">
+            <a class="category_opshions_links clearfix" href="#" data-toggle="modal" data-target=".modal_measurer">
+                <div class="img-wrap pull-left">
+                    <img src="../../img/icon_free_measurement.png" alt="Замер">
+                </div>
+                <div class="text-wrap">
+                    <span>Бесплатный замер</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a class="category_opshions_links clearfix" href="#" data-toggle="modal" data-target=".modal_free_project">
+                <div class="img-wrap pull-left">
+                    <img src="../../img/icon_free_project.png" alt="">
+                </div>
+                <div class="text-wrap">
+                    <span>Бесплатный проект</span></div>
+            </a>
+        </div>
+
+        <div class="col-xs-3">
+            <a class="category_opshions_links clearfix" href="#">
+                <div class="img-wrap pull-left">
+                    <img src="../../img/icon_buy_installments.png" alt="">
+                </div>
+                <div class="text-wrap">
+                    <span>Купить в рассрочку</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a class="category_opshions_links clearfix" href="#">
+                <div class="img-wrap pull-left">
+                    <img src="../../img/icon_bank_3d.png" alt="">
+                </div>
+                <div class="text-wrap">
+                    <span>Банк проектов 3D</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+</div>
+
+<% include part/modal.ejs %>
+<% include part/end-html.ejs %>
