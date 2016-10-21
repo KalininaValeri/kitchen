@@ -685,6 +685,19 @@ footer {
       color: white;
       opacity: 1;
     }
+
+    .close::before {
+      content: 'close';
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      display: inline-block;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
   }
 
   .modal-body {
@@ -728,13 +741,17 @@ footer {
       display: block;
     }
   }
+}
 
-  .modal_show_img {
-    display: block;
-    width: 100%;
-    border: 15px solid white;
+.modal_show_img {
+  .modal-body {
+    padding: 15px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
-
 }
 
 .question_block {

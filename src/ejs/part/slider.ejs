@@ -13,19 +13,24 @@
 
     <div class="clearfix"></div>
     <div id="products">
+        <!--этот item содержит кнопку, которая открывает FancyBox, подпись <small class="color_orange">FancyBox</small>
+        надо удалить-->
         <figure class="item">
             <div class="product_img"><img src="../../img/product.png" alt="Продукт"></div>
             <div class="product_name">Куба белая</div>
             <form action="" class="pull-right">
                 <button type="submit" class="basket"><img src="../../img/icon-basket.png" alt="Корзина"></button>
             </form>
-            <div class="product_price"><span>183 000</span>руб <span class="product_price-old">193 000руб</span>
+            <div class="product_price">
+                <span>183 000</span>руб <small class="color_orange">FancyBox</small><span class="product_price-old">193 000руб</span>
+
             </div>
+
             <div class="product-new">NEW</div>
             <div class="product-discount">-20%</div>
-            <button href="#" class="basket" data-toggle="modal" data-target=".modal_show_img">
+            <a href="#" class="basket" data-toggle="modal" data-target=".modal_show_img">
                 <img src="../../img/plus.png" alt="">
-            </button>
+            </a>
         </figure>
         <div class="item discount">
             <div class="product_img"><img src="../../img/product.png" alt="Продукт"></div>
