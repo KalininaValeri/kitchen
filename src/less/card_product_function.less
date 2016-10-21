@@ -76,8 +76,10 @@
 
   .card_product_function_option {
     margin-top: 20px;
+    margin-right: -5px;
+    margin-left: -5px;
 
-    & > div {
+    .card_product_function_option_item {
       padding: 5px;
     }
 
@@ -88,15 +90,14 @@
       border-color: #d0d0d0;
       border-style: solid;
       display: block;
-      height: 94px;
-      min-width: 113px;
+      height: 95px;
       text-align: center;
       position: relative;
       text-decoration: none;
       padding: 5px;
 
       div.img-wrap {
-        height: 35px;
+        height: 45px;
 
         img {
           display: inline-block;
@@ -114,7 +115,8 @@
       }
 
       .text-wrap {
-        height: 20px;
+        height: 40px;
+        vertical-align: middle;
 
         &:before {
           content: '';
@@ -130,8 +132,9 @@
           color: #4d020c;
           font-size: 13px;
           font-weight: 400;
-          width: 97%;
+          width: 96%;
           line-height: 14px;
+          vertical-align: middle;
         }
       }
     }
