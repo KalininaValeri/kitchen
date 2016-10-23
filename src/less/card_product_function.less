@@ -151,7 +151,7 @@
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px 0;
     background: white;
     border: 1px solid @second-color;
@@ -159,6 +159,17 @@
 
   .card_product_function_button_buy {
     background: @second-color;
+    width: 49%;
+  }
+
+  .card_product_function_button_buy:hover {
+    background: @hover-color;
+    border-color: @hover-color;
+  }
+
+  .card_product_function_button_buy:focus {
+    background: @third-color;
+    border-color: @third-color;
   }
 
   .card_product_function_button_buy::before {
