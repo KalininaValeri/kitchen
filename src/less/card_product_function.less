@@ -151,7 +151,7 @@
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
-    margin: 5px 0;
+    margin: 10px 0;
     padding: 10px 0;
     background: white;
     border: 1px solid @second-color;
@@ -166,6 +166,10 @@
     background: @hover-color;
     border-color: @hover-color;
     color: white;
+    
+    &::before {
+      content: url("../../img/icon-basket.png");
+    }
   }
 
   .card_product_function_button_buy:focus {
