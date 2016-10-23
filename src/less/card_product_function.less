@@ -159,12 +159,13 @@
 
   .card_product_function_button_buy {
     background: @second-color;
-    width: 49%;
+
   }
 
   .card_product_function_button_buy:hover {
     background: @hover-color;
     border-color: @hover-color;
+    color: white;
   }
 
   .card_product_function_button_buy:focus {
@@ -175,6 +176,10 @@
   .card_product_function_button_buy::before {
     content: url("../../img/icon_basket_brown.png");
     margin-right: 5px;
+  }
+
+  .mod-width {
+    width: 49%;
   }
 
   .card_product_function_manufacturer {
@@ -620,15 +625,36 @@
        background: #f6f6f6;
        line-height: 45px;
      }
-
-
-
    }
 
-  a:hover, .active a {
+  li a:hover, .active a {
     background: white;
     border: 2px solid #ececec;
     line-height: 41px;
+  }
+}
+
+.assortment.mod-setting {
+  .item {
+    margin-bottom: 25px;
+  }
+  .item:hover {
+    box-shadow: none;
+  }
+
+  .basket {
+    display: block;
+  }
+
+  .product_name {
+    color: @main-color;
+    font-size: 18px;
+  }
+
+  .product_setting {
+    text-transform: none;
+    font-weight: 400;
+    color: #878787;
   }
 }
 
