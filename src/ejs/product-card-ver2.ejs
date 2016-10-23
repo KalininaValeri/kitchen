@@ -159,18 +159,26 @@
         <section class="card_caption">
             <!-- Nav tabs -->
             <ul class="nav nav-pills" role="tablist">
-                <li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab"
-                                                          data-toggle="tab">описание</a></li>
-                <li role="presentation"><a id="productsSettings" href="#settings" aria-controls="profile" role="tab"
-                                           data-toggle="tab">параметры</a>
+                <li role="presentation">
+                    <a href="#description" aria-controls="home" role="tab" data-toggle="tab">
+                        описание
+                    </a>
                 </li>
-                <li role="presentation"><a href="#shipping" aria-controls="messages" role="tab" data-toggle="tab">доставка
-                        и оплата</a></li>
+                <li role="presentation" class="active">
+                    <a id="productsSettings" href="#settings" aria-controls="profile" role="tab" data-toggle="tab">
+                        параметры
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#shipping" aria-controls="messages" role="tab" data-toggle="tab">
+                        доставка и оплата
+                    </a>
+                </li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <article role="tabpanel" class="tab-pane active" id="description">
+                <article role="tabpanel" class="tab-pane" id="description">
                     <h3>Lorem ipsum dolor</h3>
                     <p>Стоимость кухонного гарнитура представлена за базовую версию размером 2,4 погонных метра.
                         Название модели определяет всю суть этой кухни. Как раз тот случай, когда, как говориться,
@@ -181,139 +189,37 @@
                         от ведущих европейских производителей фурнитуры.
                     </p>
                 </article>
-                <article role="tabpanel" class="tab-pane" id="settings">
-                    <div class="row">
-                        <div class="color_brown col-xs-2 slider-title">Фасад</div>
-                        <div class="col-xs-10">
-                            <div class="slider-mod-small">
-                                <button id="doorPrev" class="btn-prev btn btn-default btn-block">
-                                    <i class="material-icons">navigate_before</i>
-                                </button>
-                                <button id="doorNext" class="btn-next btn btn-default btn-block">
-                                    <i class="material-icons">navigate_next</i>
-                                </button>
-                                <div class="assortment">
 
-                                    <div class="">
-                                        <div id="doorSlider">
-                                            <figure class="thumbnail">
-                                                <div class="wrap">
-                                                    <img src="../../img/fasad_1.jpg" alt="" class="img-responsive"><br>
-                                                    <span>Название</span>
-                                                </div>
-                                            </figure>
-                                            <figure class="thumbnail">
-                                                <div class="wrap">
-                                                    <img src="../../img/fasad_1.jpg" alt="" class="img-responsive"><br>
-                                                    <span>Название</span>
-                                                </div>
-                                            </figure>
-                                            <figure class="thumbnail">
-                                                <div class="wrap">
-                                                    <img src="../../img/fasad_2.jpg" alt="" class="img-responsive"><br>
-                                                    <span>Название</span>
-                                                </div>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="color_brown col-xs-2 slider-title">Корпус</div>
-                        <div class="col-xs-10">
-                            <div class="slider-mod-small">
-                                <button id="korpusPrev" class="btn-prev btn btn-default btn-block">
-                                    <i class="material-icons">navigate_before</i>
-                                </button>
-                                <button id="korpusNext" class="btn-next btn btn-default btn-block">
-                                    <i class="material-icons">navigate_next</i>
-                                </button>
-                                <div class="assortment">
+                <article role="tabpanel" class="tab-pane card_caption_settings active" id="settings">
+                    <ul class="list-inline" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#settingModules" aria-controls="settingModules" role="tab" data-toggle="tab">Модули</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#settingFasad" aria-controls="settingFasad" role="tab" data-toggle="tab">Фасады</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#settingCountertop" aria-controls="settingCountertop" role="tab" data-toggle="tab">Столешницы</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#settingHendel" aria-controls="settingHendel" role="tab" data-toggle="tab">Ручки</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#settingThinges" aria-controls="settingThinges" role="tab" data-toggle="tab">Фурнитура</a>
+                        </li>
+                    </ul>
 
-                                    <div id="korpusSlider">
-                                        <figure class="thumbnail">
-                                            <div class="wrap">
-                                                <img src="../../img/korpus_brown.jpg" alt="" class="img-responsive"><br>
-                                                <span>Название</span>
-                                            </div>
-                                        </figure>
-                                        <figure class="thumbnail">
-                                            <div class="wrap">
-                                                <img src="../../img/korpus_orange.jpg" alt=""
-                                                     class="img-responsive"><br>
-                                                <span>Название</span>
-                                            </div>
-                                        </figure>
-                                        <figure class="thumbnail">
-                                            <div class="wrap">
-                                                <img src="../../img/korpus_brown.jpg" alt="" class="img-responsive"><br>
-                                                <span>Название</span>
-                                            </div>
-                                        </figure>
-                                        <figure class="thumbnail">
-                                            <div class="wrap">
-                                                <img src="../../img/korpus_orange.jpg" alt=""
-                                                     class="img-responsive"><br>
-                                                <span>Название</span>
-                                            </div>
-                                        </figure>
-                                        <figure class="thumbnail">
-                                            <div class="wrap">
-                                                <img src="../../img/korpus_brown.jpg" alt="" class="img-responsive"><br>
-                                                <span>Название</span>
-                                            </div>
-                                        </figure>
-                                        <figure class="thumbnail">
-                                            <div class="wrap">
-                                                <img src="../../img/korpus_orange.jpg" alt=""
-                                                     class="img-responsive"><br>
-                                                <span>Название</span>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="settingModules">123</div>
+                        <div role="tabpanel" class="tab-pane" id="settingFasad">..34.</div>
+                        <div role="tabpanel" class="tab-pane" id="settingCountertop">..67.</div>
+                        <div role="tabpanel" class="tab-pane" id="settingHendel">..67111.</div>
+                        <div role="tabpanel" class="tab-pane" id="settingThinges">.878..</div>
                     </div>
-                    <div class="row">
-                        <div class="color_brown col-xs-2 slider-title">Ручки</div>
-                        <div class="col-xs-10">
-                            <div class="slider-mod-small">
-                                <button id="hendelPrev1" class="btn-prev btn btn-default btn-block">
-                                    <i class="material-icons">navigate_before</i>
-                                </button>
-                                <button id="hendelNext1" class="btn-next btn btn-default btn-block">
-                                    <i class="material-icons">navigate_next</i>
-                                </button>
-                                <div class="assortment">
-                                    <div class="">
-                                        <div id="hendelSlide">
-                                            <figure class="thumbnail">
-                                                <div class="wrap">
-                                                    <img src="../../img/hendel_1.png" alt="" class="img-responsive"><br>
-                                                    <span>Название</span>
-                                                </div>
-                                            </figure>
-                                            <figure class="thumbnail">
-                                                <div class="wrap">
-                                                    <img src="../../img/hendel_2.png" alt="" class="img-responsive"><br>
-                                                    <span>Название</span>
-                                                </div>
-                                            </figure>
-                                            <figure class="thumbnail">
-                                                <div class="wrap">
-                                                    <img src="../../img/hendel_2.png" alt="" class="img-responsive"><br>
-                                                    <span>Название</span>
-                                                </div>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
                 </article>
                 <article role="tabpanel" class="tab-pane" id="shipping">
                     <p>
