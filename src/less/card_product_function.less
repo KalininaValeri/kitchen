@@ -8,12 +8,12 @@
   }
 
   .card_product_soc,
-  .card_product_assess {
+  .card_product_assess,
+  .form-group {
     color: black;
     text-transform: none;
     width: 47%;
     font-weight: 700;
-    line-height: 37px;
   }
 
   .card_product_soc {
@@ -21,7 +21,8 @@
   }
 
   .card_product_assess {
-    width: 50%;
+    width: 52%;
+    text-align: right;
   }
 
   .card_product_assess_positive,
@@ -29,15 +30,15 @@
     height: 25px;
     width: 25px;
     border: none;
-    background: url("../../img/product-card-ver2/sprites_assess.png")red;
+    background: url("../../img/product-card-ver2/sprites_assess.png") red no-repeat;
     border-radius: 2px;
+    background-position: 0px -1px;
   }
 
   .card_product_assess_negative {
-    background-position: 27px 0;
+    background-position: -31px -1px;
   }
 }
-
 
 .card_product_function {
   h1 {
@@ -103,7 +104,6 @@
       padding-right: 5px;
       margin: 5px;
     }
-
 
   }
 
@@ -207,7 +207,7 @@
     background: @hover-color;
     border-color: @hover-color;
     color: white;
-    
+
     &::before {
       content: url("../../img/icon-basket.png");
     }
@@ -339,9 +339,6 @@
       img {
         display: inline-block;
       }
-
-
-
 
     }
   }
@@ -657,20 +654,20 @@
     margin: 0 -5px 10px;
   }
 
-   li {
-     width: percentage(1 / 5);
-     margin-right: -3px;
+  li {
+    width: percentage(1 / 5);
+    margin-right: -3px;
 
-     a {
-       display: block;
-       text-align: center;
-       text-decoration: none;
-       text-transform: uppercase;
-       color: @main-color;
-       background: #f6f6f6;
-       line-height: 45px;
-     }
-   }
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: @main-color;
+      background: #f6f6f6;
+      line-height: 45px;
+    }
+  }
 
   li a:hover, .active a {
     background: white;
