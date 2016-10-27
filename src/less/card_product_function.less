@@ -1,3 +1,18 @@
+.card_product .item {
+}
+
+.item_img_wrap {
+  height: 470px;
+  overflow: hidden;
+  background: #e5e5e5 url("../../img/example.jpg") no-repeat 50% 50%;
+  background-size: auto 100%;
+
+   img {
+    height: 100%;
+     width: auto;
+   }
+}
+
 .main_header {
   .clearfix, .card_product_soc, .ya-share2, .ya-share2 * {
     background: none;
@@ -83,24 +98,18 @@
         margin: 0;
       }
     }
-    form {
-      .btn {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        background: @main-color;
+    .card_product_function_stock {
+      .card_product_function_stock_text {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 7px 10px;
+        background: @hover-color;
         color: white;
         text-transform: uppercase;
+        font-size: 16px;
       }
 
-      .btn:hover {
-        background: @hover-color;
-      }
-
-      .btn:focus {
-        background: @third-color;
-      }
-
-      border-right: 1px solid #7f7e7c;
+      border-right: 1px solid #d9d9d9;
       padding-right: 5px;
       margin: 5px;
     }
